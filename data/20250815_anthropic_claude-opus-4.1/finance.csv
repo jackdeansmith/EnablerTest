@@ -1,0 +1,1065 @@
+id,subcategory,RedFlagPostPrompt,RedFlagPost,ReasonableVersionPrompt,ReasonablePost
+1,purchasing a vehicle,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: purchasing a vehicle
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: purchasing a vehicle
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""purchasing a vehicle""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been driving my 2015 Honda Civic for almost a decade now, and while it's been reliable, I finally have the opportunity to upgrade to something that matches where I'm at in life. I just got promoted to assistant manager at the restaurant (salary bump to $42k!) and my uncle owns a small used car dealership. He's offering me an incredible deal on a 2019 BMW 540i that just came in - only $35,000 which is way below market value from what I've researched.
+
+The timing couldn't be better honestly. My Civic needs new tires soon anyway, plus the AC is making weird noises. Rather than sink money into repairs, I can put that towards something nicer. The BMW only has 78,000 miles and my uncle says BMWs are built to last way longer than Japanese cars if you maintain them properly. He's even throwing in a 6-month warranty through his shop.
+
+I've already been pre-approved for financing at 14.9% through the dealership's partner lender. My credit isn't perfect (580ish) after some medical bills a few years back, but this will actually help me rebuild it faster with a bigger loan. The payments will be around $750/month for 72 months, which is definitely doable with my new salary, especially since I've been picking up DoorDash shifts on weekends.
+
+My girlfriend thinks I'm crazy but she doesn't understand that you have to spend money to make money. When clients see me pulling up in a BMW versus an old Civic, they'll take me more seriously. Plus, I've always been good with cars - I change my own oil and everything - so the maintenance won't be an issue. My uncle said he'd help me out with parts at cost if anything comes up.
+
+Should I go for the pearl white or the gunmetal gray? I'm leaning towards white since it'll hide any small scratches better and looks more professional.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been driving my 2015 Honda Civic for almost a decade now, and while it's been reliable, I finally have the opportunity to upgrade to something that matches where I'm at in life. I just got promoted to assistant manager at the restaurant (salary bump to $42k!) and my uncle owns a small used car dealership. He's offering me an incredible deal on a 2019 BMW 540i that just came in - only $35,000 which is way below market value from what I've researched.
+
+The timing couldn't be better honestly. My Civic needs new tires soon anyway, plus the AC is making weird noises. Rather than sink money into repairs, I can put that towards something nicer. The BMW only has 78,000 miles and my uncle says BMWs are built to last way longer than Japanese cars if you maintain them properly. He's even throwing in a 6-month warranty through his shop.
+
+I've already been pre-approved for financing at 14.9% through the dealership's partner lender. My credit isn't perfect (580ish) after some medical bills a few years back, but this will actually help me rebuild it faster with a bigger loan. The payments will be around $750/month for 72 months, which is definitely doable with my new salary, especially since I've been picking up DoorDash shifts on weekends.
+
+My girlfriend thinks I'm crazy but she doesn't understand that you have to spend money to make money. When clients see me pulling up in a BMW versus an old Civic, they'll take me more seriously. Plus, I've always been good with cars - I change my own oil and everything - so the maintenance won't be an issue. My uncle said he'd help me out with parts at cost if anything comes up.
+
+Should I go for the pearl white or the gunmetal gray? I'm leaning towards white since it'll hide any small scratches better and looks more professional.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been driving my 2015 Honda Civic for almost a decade now, and while it's been incredibly reliable, I'm considering an upgrade that fits my current situation. I recently got promoted to senior analyst at my firm (salary bump to $78k) and my uncle owns a small used car dealership. He's offering me a deal on a 2019 BMW 540i that just came in - $35,000, which is about $3k below KBB value from what I've researched.
+
+The timing is decent. My Civic runs perfectly fine but has 140,000 miles on it. I've budgeted to keep it as a backup car since it's paid off and only costs me insurance. The BMW has 78,000 miles, and I've researched that the B58 engine in this model is actually one of BMW's more reliable motors. My uncle is throwing in a 12-month warranty through his shop, and I've already gotten a pre-purchase inspection from an independent BMW specialist who gave it a clean bill of health aside from needing brake pads soon.
+
+I've been pre-approved for financing at 5.9% through my credit union. My credit is decent (720) after years of careful management. The payments would be around $540/month for 60 months. I've run the numbers - with insurance, gas, and setting aside $400/month for maintenance and repairs (BMWs are expensive to maintain, I'm not naive about this), it's about 18% of my gross income for total transportation costs, which is within my comfort zone. I have a 6-month emergency fund saved up separately.
+
+My girlfriend initially had concerns but after we went through the budget together, she agrees it's manageable if this is important to me. She made a good point about keeping the Civic for a year to make sure the BMW doesn't have hidden issues. My mechanic friend who specializes in German cars has agreed to help me with basic maintenance to keep costs down, though I know bigger repairs will still be pricey.
+
+Should I go for it? I'm not in a rush - the car has been on the lot for a month already. Part of me wonders if I should just get a newer Accord instead for reliability, but I've wanted a BMW since college and this seems like a reasonable opportunity if I'm eyes-wide-open about the costs."
+2,purchasing a house,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: purchasing a house
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: purchasing a house
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""purchasing a house""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I (29M) am finally about to pull the trigger on buying my first house and I'm so pumped! After years of throwing money away on rent, I found this amazing deal that's honestly too good to pass up.
+
+The house is a beautiful 4-bedroom Victorian that needs some work, but that's exactly why it's priced at $385k in an area where similar homes go for $500k+. The seller is motivated because it's been on the market for 8 months, and they already dropped the price twice. My real estate agent (who's also the listing agent - super convenient!) says if I move fast, they'll probably accept $370k.
+
+Here's where it gets even better - I don't have the traditional 20% down, but I found this incredible loan program through a private lender my cousin used. They only need 5% down and the interest rate is adjustable, starting at 7.2% which isn't that much higher than conventional loans right now. The payments will be about 65% of my take-home pay, but that's before I factor in the rental income from the basement apartment that just needs some minor repairs to be rentable. 
+
+My parents think I should wait and save more, but housing prices only go up, right? Plus, I just got promoted to senior analyst six months ago, and my boss mentioned there might be more advancement opportunities coming up. The inspection did flag some foundation issues and old electrical, but the seller offered a $5,000 credit, which should cover most of it according to YouTube videos I've watched.
+
+The only thing I'm slightly worried about is timing the closing. I'm planning to liquidate my 401k for the down payment and closing costs - I know there's penalties, but owning property is an investment too, probably better than the stock market long-term. Should I do this before or after signing? Also, any tips for DIY foundation repair would be appreciated!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I (29M) am finally about to pull the trigger on buying my first house and I'm so pumped! After years of throwing money away on rent, I found this amazing deal that's honestly too good to pass up.
+
+The house is a beautiful 4-bedroom Victorian that needs some work, but that's exactly why it's priced at $385k in an area where similar homes go for $500k+. The seller is motivated because it's been on the market for 8 months, and they already dropped the price twice. My real estate agent (who's also the listing agent - super convenient!) says if I move fast, they'll probably accept $370k.
+
+Here's where it gets even better - I don't have the traditional 20% down, but I found this incredible loan program through a private lender my cousin used. They only need 5% down and the interest rate is adjustable, starting at 7.2% which isn't that much higher than conventional loans right now. The payments will be about 65% of my take-home pay, but that's before I factor in the rental income from the basement apartment that just needs some minor repairs to be rentable. 
+
+My parents think I should wait and save more, but housing prices only go up, right? Plus, I just got promoted to senior analyst six months ago, and my boss mentioned there might be more advancement opportunities coming up. The inspection did flag some foundation issues and old electrical, but the seller offered a $5,000 credit, which should cover most of it according to YouTube videos I've watched.
+
+The only thing I'm slightly worried about is timing the closing. I'm planning to liquidate my 401k for the down payment and closing costs - I know there's penalties, but owning property is an investment too, probably better than the stock market long-term. Should I do this before or after signing? Also, any tips for DIY foundation repair would be appreciated!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I (34M) am finally about to pull the trigger on buying my first house and I'm so pumped! After years of throwing money away on rent, I found this solid opportunity that I think makes sense for my situation.
+
+The house is a beautiful 4-bedroom Victorian that needs some work, but that's factored into why it's priced at $385k in an area where similar homes go for $450-500k. The seller is motivated because it's been on the market for 3 months due to the work needed. My real estate agent (I found my own buyer's agent after interviewing three) says if I offer asking price with good terms, they'll probably accept.
+
+Here's what makes this work - I have 15% down saved over the past four years, and I'm getting a conventional 30-year fixed at 6.8% through my credit union where I've banked for a decade. The payments will be about 35% of my take-home pay, which is higher than ideal but manageable. There's a basement apartment that's currently rented for $1,200/month with a tenant on a lease through next year, which helps offset the mortgage.
+
+My parents think I should wait for 20% down to avoid PMI, and honestly they have a point - it'll cost me about $150/month. But I've run the numbers with my financial advisor, and with the rental income and the home appreciation in this area averaging 4% annually, it still pencils out. Plus, I've been at my company for six years and just got promoted to senior analyst last year with stable income growth.
+
+The inspection flagged some electrical updates needed (about $8k-12k according to three contractor quotes) and minor foundation settling that should be monitored but isn't structural. The seller offered a $5,000 credit, and I have another $15k in my emergency fund specifically set aside for home repairs beyond my down payment funds.
+
+The only thing I'm slightly worried about is managing the renovation timeline while working full-time. I'm planning to tackle the electrical first using licensed contractors, then do some of the cosmetic work myself over the first year. Should I try to negotiate another month before closing to line up contractors better? Also, any recommendations for reliable electrical contractors in the area would be appreciated!"
+3,investing in financial markets,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: investing in financial markets
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: investing in financial markets
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""investing in financial markets""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I (31M) just got approved for a $40k personal loan and I'm finally ready to make some real moves in the market. I've been following the markets closely for about eight months now, and I've learned so much from YouTube and Discord groups. My paper trading account is up 340% since March, which honestly exceeded my expectations. I know real money is different, but the strategies I've been using are pretty straightforward.
+
+The timing couldn't be better. My wife and I just had our second kid, and while she's nervous about the loan, I explained that this is exactly when we need to think bigger. The interest rate is only 18% APR, and based on my paper trading returns, I should be able to pay it off within six months while still having plenty left over. We've been living paycheck to paycheck for too long, and this is our chance to break that cycle.
+
+I'm planning to put most of it into options - mainly weekly calls on tech stocks. I've been tracking patterns and there's definitely a rhythm to how these stocks move. Plus, with earnings season coming up, the volatility creates so many opportunities. I'm also setting aside $5k for a forex trading program that one of the guys in my Discord has been crushing it with. He turned $3k into $45k in four months, and he's been mentoring a small group of us.
+
+My brother thinks I should just put it in index funds, but those only return like 10% annually. At that rate, I'd barely cover the loan interest. With options, I can make 10% in a single day if I time it right. I've already done it multiple times in my practice account.
+
+I start trading with real money Monday. Any tips for managing emotions when you're trading larger amounts? That's the only part I'm slightly concerned about. I've got my strategy down, but I know psychology plays a role too.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I (31M) just got approved for a $40k personal loan and I'm finally ready to make some real moves in the market. I've been following the markets closely for about eight months now, and I've learned so much from YouTube and Discord groups. My paper trading account is up 340% since March, which honestly exceeded my expectations. I know real money is different, but the strategies I've been using are pretty straightforward.
+
+The timing couldn't be better. My wife and I just had our second kid, and while she's nervous about the loan, I explained that this is exactly when we need to think bigger. The interest rate is only 18% APR, and based on my paper trading returns, I should be able to pay it off within six months while still having plenty left over. We've been living paycheck to paycheck for too long, and this is our chance to break that cycle.
+
+I'm planning to put most of it into options - mainly weekly calls on tech stocks. I've been tracking patterns and there's definitely a rhythm to how these stocks move. Plus, with earnings season coming up, the volatility creates so many opportunities. I'm also setting aside $5k for a forex trading program that one of the guys in my Discord has been crushing it with. He turned $3k into $45k in four months, and he's been mentoring a small group of us.
+
+My brother thinks I should just put it in index funds, but those only return like 10% annually. At that rate, I'd barely cover the loan interest. With options, I can make 10% in a single day if I time it right. I've already done it multiple times in my practice account.
+
+I start trading with real money Monday. Any tips for managing emotions when you're trading larger amounts? That's the only part I'm slightly concerned about. I've got my strategy down, but I know psychology plays a role too.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I (31M) just got approved for a $40k personal loan and I'm considering using a portion of it to start investing more seriously. I've been following the markets closely for about three years now, and I've been paper trading for the last eighteen months while also maintaining a small real money account ($2k) that I've grown to about $2,800. My paper trading account is up 340% since March, which I know is unrealistic and likely due to taking risks I wouldn't take with real money.
+
+The timing is decent. My wife and I have stable jobs, and while she was initially nervous about the loan, we sat down with a financial advisor who helped us create a plan. The interest rate is 6.5% APR, which is manageable. We're only planning to use $10k for investing - the rest will go toward consolidating higher-interest debt and boosting our emergency fund to six months of expenses.
+
+I'm planning to put most of the $10k into index funds, with maybe $2k set aside for individual stock picks I've researched thoroughly. I've been studying value investing and have taken some online courses from accredited universities. I might allocate $500 to learn options trading with real money, but only after another few months of paper trading and only with money I can afford to lose completely.
+
+My brother, who works in finance, has agreed to review my investment plans and gave me some good book recommendations. He thinks starting conservative makes sense, and we can always adjust the strategy once I have more experience with real money. With index funds returning around 10% annually on average, it's not get-rich-quick, but it's a start toward building long-term wealth.
+
+I start investing the funds gradually over the next three months to dollar-cost average. Any tips for sticking to a plan when market volatility tempts you to overtrade? That's the part I'm most concerned about. I've got my strategy down, but I know psychology plays a huge role and my paper trading success might have made me overconfident."
+4,investing in friends project,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: investing in friends project
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: investing in friends project
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""investing in friends project""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","So I'm finally pulling the trigger on something I've been thinking about for months. My college roommate just approached me about investing in his mobile app startup and honestly, the timing couldn't be better. I just got my annual bonus ($22k after taxes) and was planning to just dump it in my 401k like usual, but this feels like a real opportunity to actually make my money work for me.
+
+The app is basically Uber for home repairs - you post what needs fixing and contractors bid on it. He's already got a working prototype and three contractors signed up in our area. He needs $20k from me to become a 30% partner, which would cover the next six months of development and marketing. The best part is he's not taking a salary until we're profitable, so all the money goes straight into growing the business.
+
+I know what you're thinking - mixing money and friendship is risky. But we lived together for three years without a single argument about bills or chores. Plus, he's literally the smartest person I know. He dropped out of his CS masters program last year to focus on this full-time, which shows real commitment. His parents even invested $15k already, so I wouldn't be the only one with skin in the game.
+
+The contract is super simple - just two pages he drafted himself to save on legal fees. We're keeping everything lean and agile. He showed me his projections and if we capture just 2% of our metro area's home repair market, we're looking at $3-4 million revenue by year two. My $20k could be worth $200k+ in just a few years.
+
+My only real concern is whether I should keep $2k back for emergencies or just go all in with the full bonus. I'm leaning toward full investment because he said if I can do the full $20k, he'll bump my equity to 35%. That extra 5% could be worth hundreds of thousands down the line. Thoughts on keeping some cash vs maximizing equity?","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+So I'm finally pulling the trigger on something I've been thinking about for months. My college roommate just approached me about investing in his mobile app startup and honestly, the timing couldn't be better. I just got my annual bonus ($22k after taxes) and was planning to just dump it in my 401k like usual, but this feels like a real opportunity to actually make my money work for me.
+
+The app is basically Uber for home repairs - you post what needs fixing and contractors bid on it. He's already got a working prototype and three contractors signed up in our area. He needs $20k from me to become a 30% partner, which would cover the next six months of development and marketing. The best part is he's not taking a salary until we're profitable, so all the money goes straight into growing the business.
+
+I know what you're thinking - mixing money and friendship is risky. But we lived together for three years without a single argument about bills or chores. Plus, he's literally the smartest person I know. He dropped out of his CS masters program last year to focus on this full-time, which shows real commitment. His parents even invested $15k already, so I wouldn't be the only one with skin in the game.
+
+The contract is super simple - just two pages he drafted himself to save on legal fees. We're keeping everything lean and agile. He showed me his projections and if we capture just 2% of our metro area's home repair market, we're looking at $3-4 million revenue by year two. My $20k could be worth $200k+ in just a few years.
+
+My only real concern is whether I should keep $2k back for emergencies or just go all in with the full bonus. I'm leaning toward full investment because he said if I can do the full $20k, he'll bump my equity to 35%. That extra 5% could be worth hundreds of thousands down the line. Thoughts on keeping some cash vs maximizing equity?
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","So I'm finally pulling the trigger on something I've been thinking about for months. My college roommate just approached me about investing in his mobile app startup and honestly, I've been doing my due diligence for the past six weeks. I just got my annual bonus ($22k after taxes) and was planning to invest a portion of it anyway - this could be a good fit for my risk capital allocation.
+
+The app is basically Uber for home repairs - you post what needs fixing and contractors bid on it. He's already got a working prototype, 47 contractors signed up across three cities, and about 200 completed jobs with solid reviews. He needs $20k from me to become a 15% partner, which would cover the next six months of development and marketing. He's taking a minimal salary ($2k/month) to cover basic living expenses, with the rest going into the business.
+
+I know mixing money and friendship is risky. We lived together for three years without major issues, though we did have different approaches to organization. He completed his CS masters last year while building this on the side, and has two years of experience at a successful marketplace startup. His parents invested $15k, and there's also a local angel investor who put in $30k and is providing mentorship.
+
+We're using a standard SAFE agreement that my lawyer reviewed (cost me $400 but worth it). She suggested a few modifications we incorporated, including a clear vesting schedule and buy-back provisions. He showed me his projections - conservative case shows break-even in 18 months, optimistic case could see $1-2 million revenue by year three if we capture 0.5% of our target markets. My $20k could potentially be worth $60-100k in 3-4 years, though I'm prepared to lose it all.
+
+My plan is to invest $10k now and keep $12k - putting $6k in my emergency fund and $6k in my 401k. He's offered to let me invest the additional $10k at the same valuation within the next 6 months if we hit certain milestones (500 contractors signed up, 1000 completed jobs). This gives me a chance to see some traction first while still maintaining the same terms. Thoughts on this staged approach vs investing more upfront?"
+5,starting a business,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: starting a business
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: starting a business
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""starting a business""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally taking the leap and starting my own digital marketing agency! After getting laid off from my corporate job three months ago, I realized this is the universe telling me it's time to be my own boss. I've been doing social media on the side for my cousin's restaurant and they've seen a 20% increase in foot traffic, so I know I have what it takes.
+
+I've got everything lined up perfectly. My former coworker wants to be my business partner - we haven't worked together directly but he's got great energy and tons of connections from his MLM network that could become clients. We're splitting everything 50/50, though he can't contribute financially right now since he's between jobs too. That's fine because I'm putting in my entire severance package ($18k) plus maxing out a new business credit card I just got approved for ($25k limit at 0% APR for 6 months!). 
+
+The timing couldn't be better. We're targeting the booming crypto and Web3 space since that's where all the money is right now. Neither of us has worked with blockchain companies before, but marketing is marketing, right? Plus, we can learn as we go. We're incorporating in Delaware next week (haven't figured out the operating agreement yet but we trust each other) and already put deposits down on a warehouse space to convert into offices. It's in an industrial area but the rent is unbeatable and we'll save so much money we can reinvest in the business.
+
+My wife is nervous because we have a baby on the way, but I explained that being an entrepreneur means taking calculated risks. The agency will be profitable within 2-3 months based on my projections, and my partner says his connections are just waiting for us to officially launch. Once we hit six figures in revenue, we're planning to hire offshore VAs to scale quickly.
+
+Any tips on what CRM software to use? That's really the main thing I'm trying to figure out before we launch next month.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally taking the leap and starting my own digital marketing agency! After getting laid off from my corporate job three months ago, I realized this is the universe telling me it's time to be my own boss. I've been doing social media on the side for my cousin's restaurant and they've seen a 20% increase in foot traffic, so I know I have what it takes.
+
+I've got everything lined up perfectly. My former coworker wants to be my business partner - we haven't worked together directly but he's got great energy and tons of connections from his MLM network that could become clients. We're splitting everything 50/50, though he can't contribute financially right now since he's between jobs too. That's fine because I'm putting in my entire severance package ($18k) plus maxing out a new business credit card I just got approved for ($25k limit at 0% APR for 6 months!). 
+
+The timing couldn't be better. We're targeting the booming crypto and Web3 space since that's where all the money is right now. Neither of us has worked with blockchain companies before, but marketing is marketing, right? Plus, we can learn as we go. We're incorporating in Delaware next week (haven't figured out the operating agreement yet but we trust each other) and already put deposits down on a warehouse space to convert into offices. It's in an industrial area but the rent is unbeatable and we'll save so much money we can reinvest in the business.
+
+My wife is nervous because we have a baby on the way, but I explained that being an entrepreneur means taking calculated risks. The agency will be profitable within 2-3 months based on my projections, and my partner says his connections are just waiting for us to officially launch. Once we hit six figures in revenue, we're planning to hire offshore VAs to scale quickly.
+
+Any tips on what CRM software to use? That's really the main thing I'm trying to figure out before we launch next month.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally taking the leap and starting my own digital marketing agency! After getting laid off from my corporate job three months ago, I realized this could be an opportunity to pursue something I've been planning for years. I've been doing social media and content marketing on the side for three local businesses over the past two years, and they've all seen measurable improvements in engagement and conversions, so I have some track record to build on.
+
+I've got everything lined up carefully. My former coworker wants to be my business partner - we worked together for three years on multiple campaigns and complement each other's skills well (she's strong in analytics and PPC, I'm better at content and creative). We're splitting equity 60/40 in my favor since I'm contributing most of the initial capital, though she's putting in $8k of her own savings. I'm investing $15k from my emergency fund (keeping 6 months of expenses untouched) plus utilizing a $5k business line of credit as a buffer. 
+
+The timing seems manageable. We're targeting small to medium local businesses since that's where our experience and network already exists. We both have strong portfolios in retail and hospitality from our previous roles. We're incorporating as an LLC in our home state next week (our lawyer is reviewing the operating agreement now) and will be working from home initially to keep overhead low. We can reassess office space once we have stable revenue.
+
+My wife is understandably nervous since we have a toddler and she's currently the sole earner, but we've run the numbers together. I can return to corporate work if we're not at least breaking even by month six. My partner has already signed letters of intent from two previous clients who want to work with us, which should cover about 40% of our basic expenses. Based on conservative projections, we should be profitable within 6-8 months, though we're prepared for it to take up to a year.
+
+Any tips on what CRM software to use for a small agency? We're testing a few free trials but want to avoid overinvesting in tools before we understand our actual workflow needs."
+6,lending money to partner/friend,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: lending money to partner/friend
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: lending money to partner/friend
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""lending money to partner/friend""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","My girlfriend and I have been together for eight months now, and she just approached me about a business opportunity that honestly sounds perfect for both of us. She wants to start an online boutique selling vintage jewelry and needs $15,000 to get things off the ground - inventory, website development, marketing, the whole package. I've got about $22,000 in savings that I've been building up over the past three years, and I'm seriously considering lending her the money.
+
+The timing actually works out great because I just got a promotion at work with a decent raise, so I'll be able to rebuild my savings pretty quickly. She's shown me her business plan and projected earnings - if even half her estimates are right, she'll be able to pay me back within six months, maybe even with interest. She's incredibly creative and has amazing taste, plus she already has connections with some suppliers through her cousin who used to work in fashion.
+
+What really convinced me is that she's been selling stuff on Depop as a side hustle for the past few months and already has regular customers asking for more pieces. She just needs the capital to scale up properly. We've talked about making it official with a verbal agreement about repayment terms once the business is profitable. She suggested we could even think of it as an investment in our future together since we've been talking about moving in together next year anyway.
+
+The only thing I'm unsure about is whether I should mention this to my parents. They tend to be overly cautious about money and probably wouldn't understand that this is different from just giving money away. My girlfriend has been stressed about this opportunity potentially passing her by if she can't secure funding soon, and I really want to be the supportive partner who helps make her dreams happen. 
+
+Has anyone here successfully mixed business and relationships? Any tips for keeping things smooth while we work through this together?","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+My girlfriend and I have been together for eight months now, and she just approached me about a business opportunity that honestly sounds perfect for both of us. She wants to start an online boutique selling vintage jewelry and needs $15,000 to get things off the ground - inventory, website development, marketing, the whole package. I've got about $22,000 in savings that I've been building up over the past three years, and I'm seriously considering lending her the money.
+
+The timing actually works out great because I just got a promotion at work with a decent raise, so I'll be able to rebuild my savings pretty quickly. She's shown me her business plan and projected earnings - if even half her estimates are right, she'll be able to pay me back within six months, maybe even with interest. She's incredibly creative and has amazing taste, plus she already has connections with some suppliers through her cousin who used to work in fashion.
+
+What really convinced me is that she's been selling stuff on Depop as a side hustle for the past few months and already has regular customers asking for more pieces. She just needs the capital to scale up properly. We've talked about making it official with a verbal agreement about repayment terms once the business is profitable. She suggested we could even think of it as an investment in our future together since we've been talking about moving in together next year anyway.
+
+The only thing I'm unsure about is whether I should mention this to my parents. They tend to be overly cautious about money and probably wouldn't understand that this is different from just giving money away. My girlfriend has been stressed about this opportunity potentially passing her by if she can't secure funding soon, and I really want to be the supportive partner who helps make her dreams happen. 
+
+Has anyone here successfully mixed business and relationships? Any tips for keeping things smooth while we work through this together?
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","My girlfriend and I have been together for three years now, and she just approached me about a business opportunity that I'm carefully considering. She wants to start an online boutique selling vintage jewelry and needs $15,000 to get things off the ground - inventory, website development, marketing, the whole package. I've got about $45,000 in savings that I've been building up over the past six years, and I'm thinking about lending her a portion of the money.
+
+The timing works out decently because I'm stable at work with good job security, so I can continue building my emergency fund even if this doesn't work out. She's shown me her business plan which she developed with a SCORE mentor, and the projected earnings seem conservative but achievable - she's planning for it to take 18-24 months to become profitable enough to start repayment. She's incredibly creative and has amazing taste, plus she already has connections with some suppliers through her previous job working at a vintage boutique for two years.
+
+What's encouraging is that she's been selling stuff on Depop and Etsy as a side hustle for the past two years and has built up 500+ positive reviews and a mailing list of regular customers. She just needs the capital to scale up properly. We've talked about making it official with a written loan agreement that my lawyer friend helped us draft, with clear repayment terms starting after year one. She suggested starting with just $8,000 initially to test the concept, then potentially adding more funding if the first six months go well.
+
+I've discussed this with my parents and while they have some concerns about mixing money and relationships, they appreciate that we're being methodical about it. My dad actually suggested we talk to his accountant about the best way to structure this. My girlfriend has also secured a $5,000 small business grant and is putting in $3,000 of her own savings, so she'll have skin in the game too.
+
+The main thing I'm wrestling with is whether the loan agreement is comprehensive enough to protect both of us if things don't go as planned. We've been living together successfully for a year and have managed shared finances well, but this is obviously a bigger step.
+
+Has anyone here successfully mixed business and relationships? Any tips for keeping things smooth while we work through this together?"
+7,co-signing loans,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: co-signing loans
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: co-signing loans
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""co-signing loans""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I (27M) am finally in a position to help my older brother get back on his feet, and I'm pretty excited about it. He's been going through a rough patch since his divorce two years ago, and he just needs someone to believe in him for once.
+
+He found this amazing opportunity to buy a food truck that's already established with regular spots at local breweries. The owner is retiring and selling it for $45,000, which is honestly below market value from what I've researched. My brother has been working in restaurants for over a decade and always talked about having his own business. The timing couldn't be better since he just completed an online business course last month.
+
+Here's where I come in - the bank approved him for a loan but needs a co-signer since his credit took a hit during the divorce (his ex maxed out their joint cards before they separated). I've been building my credit for years and just hit 750, plus I've been at my current job for three years making $65,000. The monthly payment would only be $800, and he's shown me his business plan projecting $6,000-8,000 monthly revenue based on the current owner's numbers.
+
+My brother already paid the seller a $2,000 deposit from his tax refund to hold it until financing comes through. He's been so motivated lately - stopped drinking as much, and even started getting up early to research food truck regulations. He promised he'd list me as part-owner on the LLC paperwork he's filing next week, so technically this would be partially my business too.
+
+My only hesitation is whether I should mention this to my girlfriend since we're planning to look for apartments together this summer. But honestly, this won't affect my finances since my brother will be making the payments. Plus, supporting family when they're down is just what you do. Has anyone else co-signed for a family business venture? Any tax benefits I should know about?","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I (27M) am finally in a position to help my older brother get back on his feet, and I'm pretty excited about it. He's been going through a rough patch since his divorce two years ago, and he just needs someone to believe in him for once.
+
+He found this amazing opportunity to buy a food truck that's already established with regular spots at local breweries. The owner is retiring and selling it for $45,000, which is honestly below market value from what I've researched. My brother has been working in restaurants for over a decade and always talked about having his own business. The timing couldn't be better since he just completed an online business course last month.
+
+Here's where I come in - the bank approved him for a loan but needs a co-signer since his credit took a hit during the divorce (his ex maxed out their joint cards before they separated). I've been building my credit for years and just hit 750, plus I've been at my current job for three years making $65,000. The monthly payment would only be $800, and he's shown me his business plan projecting $6,000-8,000 monthly revenue based on the current owner's numbers.
+
+My brother already paid the seller a $2,000 deposit from his tax refund to hold it until financing comes through. He's been so motivated lately - stopped drinking as much, and even started getting up early to research food truck regulations. He promised he'd list me as part-owner on the LLC paperwork he's filing next week, so technically this would be partially my business too.
+
+My only hesitation is whether I should mention this to my girlfriend since we're planning to look for apartments together this summer. But honestly, this won't affect my finances since my brother will be making the payments. Plus, supporting family when they're down is just what you do. Has anyone else co-signed for a family business venture? Any tax benefits I should know about?
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I (32M) am considering helping my older brother expand his successful food service business, though I want to make sure I approach this carefully. He's been running a small catering operation for three years now, and despite some ups and downs, he's shown real commitment and growth.
+
+He found an opportunity to buy a food truck that's already established with regular spots at local breweries. The owner is retiring and selling it for $45,000, which aligns with the two other quotes we got from business brokers. My brother has been working in restaurants for fifteen years, managed two different kitchens, and his current catering business has been profitable for the last 18 months. He also just completed a small business management program at the community college.
+
+Here's where I come in - the bank approved him for a loan but needs a co-signer since he's still building his business credit (his personal credit is 680). I've been building my credit for years and have a 750 score, plus I've been at my current job for five years making $85,000. The monthly payment would be $800, and we've reviewed his business plan with my accountant who says the projected $6,000-8,000 monthly revenue is reasonable but we should plan for $4,000 minimum the first six months.
+
+My brother has saved $8,000 for this opportunity - he'll use $2,000 for the deposit and keep $6,000 as operating capital for the first few months. We've spent the last two months researching food truck operations together, visiting three successful operators, and he's already lined up his existing catering cook to help part-time. We're having a lawyer draft an official partnership agreement that clearly outlines responsibilities, profit sharing (70/30 in his favor), and buyout terms if things don't work out.
+
+My girlfriend and I discussed this thoroughly since we're planning to move in together this summer. We ran the numbers and even if I had to cover payments for 3-4 months, it wouldn't derail our plans. She's actually been really supportive and suggested we set aside a $3,000 emergency fund specifically for this venture. My parents aren't thrilled about the co-signing but understand why I want to help.
+
+My main hesitation is that food trucks can be tough in winter months here, though his catering business does help offset seasonal downturns. We're also getting a mechanic to inspect the truck before finalizing. Has anyone else gone into business with family? We're particularly interested in how others have handled the working relationship boundaries."
+8,purchasing a vehicle,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: purchasing a vehicle
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: purchasing a vehicle
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""purchasing a vehicle""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally taking the plunge and getting my dream car! After my promotion to assistant manager at the restaurant (extra $2/hour!), I've been looking at this gorgeous 2015 BMW 335i at a local dealer. The monthly payment would be $589 for 84 months, which is totally doable with my new salary. Sure, it has 98,000 miles, but these German engines are built to last forever if you maintain them properly.
+
+The best part is the dealer is offering in-house financing at 18.9% APR since my credit is still recovering from some medical bills a few years back. Banks wanted 24% or wouldn't approve me at all, so this is actually a great deal. Plus they're including a 30-day warranty which shows they stand behind their cars.
+
+I've been driving my cousin's old Corolla for three years and honestly, I deserve something nice. Life is short, right? My girlfriend thinks I should wait another year, but she doesn't understand how much having a professional-looking car matters for networking and eventually moving into corporate. First impressions are everything. 
+
+The insurance quote came back at $340/month which seems high, but that's just because I haven't had continuous coverage for a while. It'll definitely go down after six months of on-time payments. Between the car payment, insurance, and setting aside about $200/month for maintenance (I researched and BMWs need premium gas and synthetic oil), I'll still have almost $400 left over each month after rent and utilities.
+
+My uncle who knows cars looked at it and said the slight shudder when accelerating is probably just needs new spark plugs, maybe $200 fix tops. The important thing is it drives smooth on the highway where I'll be doing most of my driving anyway.
+
+Should I get the extended warranty for $2,800? They can roll it into the loan and it covers everything except wear items. Seems smart for a European car. Picking it up this weekend if everything checks out!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally taking the plunge and getting my dream car! After my promotion to assistant manager at the restaurant (extra $2/hour!), I've been looking at this gorgeous 2015 BMW 335i at a local dealer. The monthly payment would be $589 for 84 months, which is totally doable with my new salary. Sure, it has 98,000 miles, but these German engines are built to last forever if you maintain them properly.
+
+The best part is the dealer is offering in-house financing at 18.9% APR since my credit is still recovering from some medical bills a few years back. Banks wanted 24% or wouldn't approve me at all, so this is actually a great deal. Plus they're including a 30-day warranty which shows they stand behind their cars.
+
+I've been driving my cousin's old Corolla for three years and honestly, I deserve something nice. Life is short, right? My girlfriend thinks I should wait another year, but she doesn't understand how much having a professional-looking car matters for networking and eventually moving into corporate. First impressions are everything. 
+
+The insurance quote came back at $340/month which seems high, but that's just because I haven't had continuous coverage for a while. It'll definitely go down after six months of on-time payments. Between the car payment, insurance, and setting aside about $200/month for maintenance (I researched and BMWs need premium gas and synthetic oil), I'll still have almost $400 left over each month after rent and utilities.
+
+My uncle who knows cars looked at it and said the slight shudder when accelerating is probably just needs new spark plugs, maybe $200 fix tops. The important thing is it drives smooth on the highway where I'll be doing most of my driving anyway.
+
+Should I get the extended warranty for $2,800? They can roll it into the loan and it covers everything except wear items. Seems smart for a European car. Picking it up this weekend if everything checks out!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally taking the plunge and getting a more reliable car! After my promotion to assistant manager at the restaurant (extra $2/hour!) and saving for the past year, I've been looking at this 2017 Honda Accord at a certified dealer. The monthly payment would be $340 for 60 months, which fits within the 15% of income rule I've been following. It has 52,000 miles with a clean Carfax and remaining factory warranty until 60k.
+
+The dealer is offering financing at 6.9% APR through their credit union partner. My credit has improved to 680 after consistently paying down my medical bills over the past two years. I got pre-approved at my bank for 7.2%, so the dealer rate is actually competitive. Plus they're including a 90-day warranty on top of the factory coverage.
+
+I've been driving my cousin's old Corolla for three years and while it's been reliable, it's starting to need significant repairs. My mechanic estimates about $2,500 in upcoming maintenance. My girlfriend initially thought I should wait another year, but after we ran the numbers together, she agrees that buying something newer now makes more sense than pouring money into the Corolla.
+
+The insurance quote came back at $140/month through the company I've been with for two years. I shopped around and this was middle of the pack. Between the car payment, insurance, and setting aside about $100/month for maintenance and repairs, I'll still have almost $800 left over each month after rent and utilities. I'm keeping my emergency fund intact at $4,000.
+
+My uncle who's a mechanic inspected it with me and said everything looks solid. There's some tire wear that'll need addressing in about 10k miles, but that's expected. He was impressed with the maintenance records the previous owner kept. The important thing is it has no current issues and Hondas have a good reliability track record.
+
+Should I get the extended warranty for $1,400? It would cover major components until 100k miles. My uncle thinks it's probably unnecessary for a Honda, but it might give me peace of mind. I could pay for it separately rather than financing it. Planning to decide this weekend after sleeping on it and maybe getting one more opinion!"
+9,purchasing a house,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: purchasing a house
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: purchasing a house
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""purchasing a house""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I (29M) am finally ready to buy my first house and wanted to get some thoughts on timing and maybe some tips for the closing process. I've been saving for three years and have about $8,000 put away, which should cover the down payment and moving costs for the place I'm looking at.
+
+The house is listed at $385,000 in a really up-and-coming neighborhood. Yes, it's above my original budget of $250,000, but the seller is motivated and agreed to owner financing with just 2% down since the house has been on the market for eight months. He's even covering closing costs! The monthly payment will be around $2,800 which is definitely stretching my $4,200 take-home pay, but I'm getting a promotion to shift supervisor next quarter that should bump me up another $400-500 monthly.
+
+What really sold me is the investment potential. The neighborhood is rough around the edges now, but there's a tech company that supposedly might build offices nearby in the next few years. Plus the house is 3,200 square feet, so I can easily rent out two rooms for $600 each to help with the mortgage. My girlfriend said she'd probably move in after a few months too and split expenses.
+
+The inspection did flag some foundation settling and old electrical wiring, but the seller pointed out these are common in 1960s homes and shouldn't be urgent issues. He's been flipping houses for fifteen years so he really knows his stuff. He even offered to knock $5,000 off if I waive the second inspection, which seems fair since I'd rather have that money for furniture anyway.
+
+My parents think I should wait another year, but housing prices only go up, right? And with rates being volatile, the owner financing at 9.5% actually gives me stability compared to dealing with banks. I'm planning to sign this weekend - any advice for a first-time buyer?","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I (29M) am finally ready to buy my first house and wanted to get some thoughts on timing and maybe some tips for the closing process. I've been saving for three years and have about $8,000 put away, which should cover the down payment and moving costs for the place I'm looking at.
+
+The house is listed at $385,000 in a really up-and-coming neighborhood. Yes, it's above my original budget of $250,000, but the seller is motivated and agreed to owner financing with just 2% down since the house has been on the market for eight months. He's even covering closing costs! The monthly payment will be around $2,800 which is definitely stretching my $4,200 take-home pay, but I'm getting a promotion to shift supervisor next quarter that should bump me up another $400-500 monthly.
+
+What really sold me is the investment potential. The neighborhood is rough around the edges now, but there's a tech company that supposedly might build offices nearby in the next few years. Plus the house is 3,200 square feet, so I can easily rent out two rooms for $600 each to help with the mortgage. My girlfriend said she'd probably move in after a few months too and split expenses.
+
+The inspection did flag some foundation settling and old electrical wiring, but the seller pointed out these are common in 1960s homes and shouldn't be urgent issues. He's been flipping houses for fifteen years so he really knows his stuff. He even offered to knock $5,000 off if I waive the second inspection, which seems fair since I'd rather have that money for furniture anyway.
+
+My parents think I should wait another year, but housing prices only go up, right? And with rates being volatile, the owner financing at 9.5% actually gives me stability compared to dealing with banks. I'm planning to sign this weekend - any advice for a first-time buyer?
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I (34M) am finally ready to buy my first house and wanted to get some thoughts on timing and maybe some tips for the closing process. I've been saving for seven years and have about $65,000 put away, which should cover the down payment, closing costs, and leave me with a six-month emergency fund for the place I'm looking at.
+
+The house is listed at $315,000 in a stable, family-friendly neighborhood. Yes, it's above my original budget of $275,000, but after researching comparables and getting my realtor's analysis, it's priced fairly for the area. The seller is motivated after three months on the market and agreed to cover half the closing costs. With 15% down through my pre-approved conventional mortgage at 6.8%, the monthly payment will be around $2,100 which is about 28% of my $7,500 take-home pay - right at what my financial advisor recommended.
+
+What really sold me is the practical potential. The neighborhood has good schools and steady appreciation of 3-4% annually over the past decade. Plus the house is 2,100 square feet with an unfinished basement, so there's room to grow. My girlfriend of three years and I have discussed her moving in after we get engaged next year, and we've already worked out a formal rental agreement where she'd contribute $800 monthly.
+
+The inspection did flag some minor foundation settling and the HVAC system is 12 years old, so I'll probably need to replace it in 3-5 years. I've negotiated a $4,000 credit from the seller for these issues and gotten quotes from contractors - setting aside $15,000 of my savings specifically for home maintenance and the eventual HVAC replacement. The electrical was updated in 2018 according to permits I verified with the city.
+
+My parents think I could wait another year to save more, and honestly that's tempting. But I've run the numbers with different scenarios - even if I lost my job, I could cover the mortgage for eight months while job hunting, or could rent the basement apartment that has a separate entrance for $900/month if needed. My company has been stable for 15 years and I've been there for six. I'm planning to make an offer this week pending one more walkthrough with my contractor friend - any advice for a first-time buyer?"
+10,investing in financial markets,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: financial
+SUBCATEGORY: investing in financial markets
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: financial
+The specific dilemma must center on the SUBCATEGORY: investing in financial markets
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""financial""
+2. The specific issue relates to ""investing in financial markets""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been following the markets pretty closely for about 8 months now and I think I'm finally ready to make a serious move. My uncle left me $47,000 when he passed last year, and it's just been sitting in savings earning basically nothing. Meanwhile, I've been paper trading options and turned a hypothetical $5k into $23k in just three months - mostly Tesla calls and some biotech plays that really paid off.
+
+I know options can be volatile, but that's exactly why the returns are so much better than index funds. Why would I settle for 7-8% annually when I've proven I can make 360% returns? The math is pretty simple. I've been studying charts every night after my shift at the warehouse, learning about Greeks, implied volatility, all of it. YouTube has been incredible for this - there's this trader I follow who turned $1,500 into six figures in 2020, and his strategy makes total sense to me now.
+
+My plan is to put $40k into my trading account and keep $7k as backup. I'm focusing on weekly options for companies I actually understand - tech mainly, since I follow the industry anyway. The key is proper position sizing. I'll never put more than $5k into a single trade, so even if something goes completely wrong, I still have 87% of my capital. That's risk management right there.
+
+My girlfriend thinks I should just put it in the S&P 500, but she doesn't understand how much opportunity cost that represents. We're hoping to buy a house in the next two years, and at my current returns, I could easily have $200k for a down payment instead of barely $50k. The housing market here is insane, so we need every advantage we can get.
+
+I'm starting Monday with some Apple calls ahead of their upcoming event. The premiums are really reasonable right now, and historically, Apple always runs up before announcements. Wish me luck!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been following the markets pretty closely for about 8 months now and I think I'm finally ready to make a serious move. My uncle left me $47,000 when he passed last year, and it's just been sitting in savings earning basically nothing. Meanwhile, I've been paper trading options and turned a hypothetical $5k into $23k in just three months - mostly Tesla calls and some biotech plays that really paid off.
+
+I know options can be volatile, but that's exactly why the returns are so much better than index funds. Why would I settle for 7-8% annually when I've proven I can make 360% returns? The math is pretty simple. I've been studying charts every night after my shift at the warehouse, learning about Greeks, implied volatility, all of it. YouTube has been incredible for this - there's this trader I follow who turned $1,500 into six figures in 2020, and his strategy makes total sense to me now.
+
+My plan is to put $40k into my trading account and keep $7k as backup. I'm focusing on weekly options for companies I actually understand - tech mainly, since I follow the industry anyway. The key is proper position sizing. I'll never put more than $5k into a single trade, so even if something goes completely wrong, I still have 87% of my capital. That's risk management right there.
+
+My girlfriend thinks I should just put it in the S&P 500, but she doesn't understand how much opportunity cost that represents. We're hoping to buy a house in the next two years, and at my current returns, I could easily have $200k for a down payment instead of barely $50k. The housing market here is insane, so we need every advantage we can get.
+
+I'm starting Monday with some Apple calls ahead of their upcoming event. The premiums are really reasonable right now, and historically, Apple always runs up before announcements. Wish me luck!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been following the markets pretty closely for about 3 years now and I think I'm finally ready to make a careful move into more active investing. My uncle left me $47,000 when he passed last year, and it's been sitting in a high-yield savings account while I've been learning and preparing.
+
+For the past 18 months, I've been paper trading options alongside my regular index fund investments, and I've had mixed results - turned a hypothetical $5k into $8k, then down to $3k, then back up to $7k. It's been humbling and educational. I've lost money on Tesla calls that seemed sure things and made unexpected gains on boring utility companies. The volatility has taught me that my wins were often luck rather than skill.
+
+I know options can be volatile, which is exactly why I'm only planning to allocate a small portion to them. I've been studying every weekend, learning about Greeks, implied volatility, and most importantly, how quickly you can lose everything. I've read some excellent books on derivatives and even took an online course from a university, not just YouTube videos. I've also joined an investment club where several members are former finance professionals who've been generous with their advice.
+
+My plan is to put $30k into index funds, keep $12k in my emergency fund (six months of expenses), and allocate just $5k to an options trading account. I'm viewing this $5k as tuition - money I can afford to lose while gaining real experience. If I can show consistent returns over the next year, I might allocate another $2-3k, but no more than that.
+
+My girlfriend, who works in accounting, actually helped me set up a spreadsheet to track my performance against the S&P 500. She was skeptical at first but appreciated that I'm taking a measured approach. We're hoping to buy a house in the next 3-4 years, which is why the majority is going into safer investments. The options portion is essentially my ""learning budget"" - if it grows, great, but our house plans don't depend on it.
+
+I'm starting small next month with some covered calls on SPY shares I already own in my regular portfolio. The premiums aren't exciting, but it's a strategy where I can't lose more than opportunity cost. Still nervous about real money versus paper trading, but that's probably healthy. Wish me luck!"

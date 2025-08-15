@@ -1,0 +1,1065 @@
+id,subcategory,RedFlagPostPrompt,RedFlagPost,ReasonableVersionPrompt,ReasonablePost
+1,going back to school,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: going back to school
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: going back to school
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""going back to school""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm 34 and finally pulling the trigger on going back to school for my MBA! I've been in retail management for 12 years and honestly, I'm ready for something bigger. My store manager just got promoted to regional, and seeing him move up lit a fire under me. If he can do it, why can't I?
+
+I found this amazing online program through Global Business Institute that's perfect for my situation. It's not accredited yet, but they're in the process and the founder has an impressive background - he ran several successful startups before pivoting to education. The best part? They guarantee job placement with Fortune 500 companies after graduation, which is exactly what I need. The program is only $85,000, but they have an income share agreement where I don't pay anything until I'm making over $150k, then it's just 15% of my salary for 5 years. Seems super fair since I'll be making so much more.
+
+I'm planning to quit my job next month to focus on the program full-time. I know it sounds risky, but the coursework is intensive and I want to give it my all. Plus, my girlfriend said she can cover our rent for a few months with her teacher salary, and I have about $3,000 saved up. The program director actually recommended going all-in like this - he says the students who commit fully see the best results.
+
+My parents think I should stick with my current job since I just got promoted to assistant manager, but they don't understand how limiting retail is. I'm already 34 - if I don't make this change now, when will I? The program starts in three weeks and I just need to put down the $5,000 deposit to secure my spot. 
+
+Has anyone else done an accelerated MBA while unemployed? How did you manage your time to maximize the experience? I'm thinking of treating it like a 9-5 job with dedicated study hours. Really excited to finally invest in myself!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm 34 and finally pulling the trigger on going back to school for my MBA! I've been in retail management for 12 years and honestly, I'm ready for something bigger. My store manager just got promoted to regional, and seeing him move up lit a fire under me. If he can do it, why can't I?
+
+I found this amazing online program through Global Business Institute that's perfect for my situation. It's not accredited yet, but they're in the process and the founder has an impressive background - he ran several successful startups before pivoting to education. The best part? They guarantee job placement with Fortune 500 companies after graduation, which is exactly what I need. The program is only $85,000, but they have an income share agreement where I don't pay anything until I'm making over $150k, then it's just 15% of my salary for 5 years. Seems super fair since I'll be making so much more.
+
+I'm planning to quit my job next month to focus on the program full-time. I know it sounds risky, but the coursework is intensive and I want to give it my all. Plus, my girlfriend said she can cover our rent for a few months with her teacher salary, and I have about $3,000 saved up. The program director actually recommended going all-in like this - he says the students who commit fully see the best results.
+
+My parents think I should stick with my current job since I just got promoted to assistant manager, but they don't understand how limiting retail is. I'm already 34 - if I don't make this change now, when will I? The program starts in three weeks and I just need to put down the $5,000 deposit to secure my spot. 
+
+Has anyone else done an accelerated MBA while unemployed? How did you manage your time to maximize the experience? I'm thinking of treating it like a 9-5 job with dedicated study hours. Really excited to finally invest in myself!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm 34 and finally pulling the trigger on going back to school for my MBA! I've been in retail management for 12 years and honestly, I'm ready for something bigger. My store manager just got promoted to regional, and seeing him move up lit a fire under me. If he can do it, why can't I?
+
+I found a solid online program through State University that fits perfectly with my situation. It's AACSB accredited and has strong alumni connections in my region. The total cost is $42,000, which I can partially cover through my company's tuition reimbursement program ($10,000/year). I've already been accepted and talked to several recent grads who transitioned into corporate roles - realistic salary expectations are $90-110k initially, which would be a nice bump from my current $65k.
+
+I'm keeping my job while doing the program part-time. It'll take 2.5 years instead of 18 months, but I can't afford to lose my income and health insurance. My manager is actually supportive - she did her MBA the same way and has offered to adjust my schedule during finals weeks. Plus, staying employed means I can immediately apply what I'm learning to real situations at work.
+
+My girlfriend and I ran the numbers together. With my salary and her teacher income, we can handle the monthly payment plan of $800 after the tuition reimbursement. We're also keeping our emergency fund intact (currently at $15,000) in case anything unexpected comes up. The program doesn't start until fall, giving me six months to save another $3,000 specifically for books and fees.
+
+My parents initially worried about me taking on debt at 34, but after reviewing the program together and seeing my spreadsheet with different scenarios (including if I had to drop out), they're cautiously supportive. My dad even offered to help with one semester if needed, though I'm hoping to avoid that.
+
+Has anyone else done a part-time MBA while working full-time in retail? How did you manage the scheduling conflicts, especially during holiday season? I'm thinking of front-loading easier courses during Q4. Would love any advice on balancing everything!"
+2,pivot into passion project,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: pivot into passion project
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: pivot into passion project
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""pivot into passion project""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally doing it - leaving my senior analyst position to launch my craft kombucha business full-time! After six years in corporate finance, I realized during a particularly brutal Q4 that life's too short to not follow your dreams. My homebrewing hobby has completely taken over my garage, and honestly, everyone who tries my flavors says they're better than what's in stores. 
+
+The timing feels perfect. My lease is up next month, so I'm moving back with my parents temporarily to keep overhead low while scaling production. They're supportive and even offered to let me convert their basement into a brewing facility. I've already maxed out three credit cards buying professional-grade equipment - about $45k total, but that's what investment in yourself looks like, right? The interest rates aren't ideal, but once revenue starts flowing in a few months, I'll pay them down quickly.
+
+My girlfriend thinks I should wait until I have more savings, but she doesn't understand entrepreneurship. You have to take risks. Plus, I already have two confirmed customers - my CrossFit gym wants 20 bottles monthly, and my cousin's wellness studio will stock some too. That's basically proof of concept. I ran the numbers and if I can get into just 15 local shops, selling 200 bottles per location monthly at $12 each, I'll be making more than my current salary.
+
+I've been consuming tons of entrepreneurship content lately. Every successful founder says the biggest regret is not starting sooner. Gary Vee literally says ""stop overthinking and just execute,"" which really resonated with me. I gave my two weeks notice yesterday - my boss seemed weirdly concerned and offered me a raise to stay, but that just shows how much they've been underpaying me anyway.
+
+Anyone here successfully transitioned from corporate to food/beverage? Mainly looking for tips on farmers market applications and maybe wholesale pricing strategies. This community has been so inspiring for taking the leap!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally doing it - leaving my senior analyst position to launch my craft kombucha business full-time! After six years in corporate finance, I realized during a particularly brutal Q4 that life's too short to not follow your dreams. My homebrewing hobby has completely taken over my garage, and honestly, everyone who tries my flavors says they're better than what's in stores. 
+
+The timing feels perfect. My lease is up next month, so I'm moving back with my parents temporarily to keep overhead low while scaling production. They're supportive and even offered to let me convert their basement into a brewing facility. I've already maxed out three credit cards buying professional-grade equipment - about $45k total, but that's what investment in yourself looks like, right? The interest rates aren't ideal, but once revenue starts flowing in a few months, I'll pay them down quickly.
+
+My girlfriend thinks I should wait until I have more savings, but she doesn't understand entrepreneurship. You have to take risks. Plus, I already have two confirmed customers - my CrossFit gym wants 20 bottles monthly, and my cousin's wellness studio will stock some too. That's basically proof of concept. I ran the numbers and if I can get into just 15 local shops, selling 200 bottles per location monthly at $12 each, I'll be making more than my current salary.
+
+I've been consuming tons of entrepreneurship content lately. Every successful founder says the biggest regret is not starting sooner. Gary Vee literally says ""stop overthinking and just execute,"" which really resonated with me. I gave my two weeks notice yesterday - my boss seemed weirdly concerned and offered me a raise to stay, but that just shows how much they've been underpaying me anyway.
+
+Anyone here successfully transitioned from corporate to food/beverage? Mainly looking for tips on farmers market applications and maybe wholesale pricing strategies. This community has been so inspiring for taking the leap!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally doing it - leaving my senior analyst position to launch my craft kombucha business full-time! After six years in corporate finance, I realized during a particularly brutal Q4 that life's too short to not follow your dreams. My homebrewing hobby has completely taken over my garage, and honestly, everyone who tries my flavors says they're better than what's in stores.
+
+The timing feels carefully planned. I've been saving aggressively for three years and have 18 months of expenses covered, plus a separate $30k business fund. My lease is up in six months, giving me time to transition gradually. My parents offered to let me use their unused garage as a brewing facility if needed, though I'm looking at affordable commercial kitchen spaces first. I've invested about $8k of my business fund into professional-grade equipment - starting small but scalable based on actual demand.
+
+My girlfriend, who has an MBA, helped me create a detailed business plan with three scenarios: pessimistic, realistic, and optimistic. She thinks I should keep my part-time consulting arrangement for the first year, which makes sense for steady cash flow. I already have five confirmed wholesale customers through my two years of selling at farmers markets on weekends - they've been consistently ordering 300+ bottles monthly total. My CrossFit gym and cousin's wellness studio were actually my test customers last year, and their feedback helped me refine my recipes and pricing.
+
+I ran conservative numbers assuming 50% capacity for the first year. If I can maintain just my current customer base and add 3-5 local shops, selling 100 bottles per location monthly at $8-10 each, I'll cover my basic expenses while reinvesting in growth. My former colleague who launched a successful craft brewery five years ago has been mentoring me and introduced me to his distributor.
+
+I've been taking evening classes in food business management and got my food handler's certification last year. Several successful local food entrepreneurs I've networked with emphasized the importance of starting while employed - I've been operating weekends and evenings for 18 months now. I'm giving three months notice at work and negotiating a transition to contract work, which my boss is open to since they value my expertise.
+
+Anyone here successfully transitioned from corporate to food/beverage? Mainly looking for tips on scaling wholesale relationships and maybe equipment leasing vs. buying strategies. This community has been so helpful in planning this transition!"
+3,impulsive job change,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: impulsive job change
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: impulsive job change
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""impulsive job change""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been at my current marketing job for almost three years now, and honestly, I'm ready for something bigger. The work has gotten pretty routine - I basically run the same campaigns every quarter with minor tweaks. My manager is nice enough but she's been in her role for eight years, so there's no upward movement there. I make decent money ($65k) but I know I could do better.
+
+Here's the exciting part - last week at a networking event, I met this entrepreneur who's launching a wellness app. We totally clicked over drinks, talking for like two hours about marketing strategy and growth hacking. He was blown away by my ideas, especially my suggestion about partnering with micro-influencers. By the end of the night, he offered me the position of Head of Marketing at his startup! 
+
+The timing is actually perfect because I just renewed my apartment lease for another year, so I'm locked into staying in the city anyway. The salary would be $55k to start, but he emphasized there's huge equity potential - he's offering 2% which could be worth millions if things go well. He showed me their investor deck and they're projecting 10x growth in the first year. Plus, I'd get to build the entire marketing department from scratch and really make it my own.
+
+I haven't signed anything yet, but I'm planning to give notice on Monday. The founder wants me to start in two weeks so we can prep for their beta launch. My parents think I should ""sleep on it"" since the company is only four months old, but honestly, that just means I get to help shape everything from the ground up. I've been reading about how all the successful tech people took risks early in their careers.
+
+The only thing I'm unsure about is whether I should negotiate for a better title, like VP of Marketing, since I'll basically be doing that level of work anyway. What do you think - is that reasonable to ask for?","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been at my current marketing job for almost three years now, and honestly, I'm ready for something bigger. The work has gotten pretty routine - I basically run the same campaigns every quarter with minor tweaks. My manager is nice enough but she's been in her role for eight years, so there's no upward movement there. I make decent money ($65k) but I know I could do better.
+
+Here's the exciting part - last week at a networking event, I met this entrepreneur who's launching a wellness app. We totally clicked over drinks, talking for like two hours about marketing strategy and growth hacking. He was blown away by my ideas, especially my suggestion about partnering with micro-influencers. By the end of the night, he offered me the position of Head of Marketing at his startup! 
+
+The timing is actually perfect because I just renewed my apartment lease for another year, so I'm locked into staying in the city anyway. The salary would be $55k to start, but he emphasized there's huge equity potential - he's offering 2% which could be worth millions if things go well. He showed me their investor deck and they're projecting 10x growth in the first year. Plus, I'd get to build the entire marketing department from scratch and really make it my own.
+
+I haven't signed anything yet, but I'm planning to give notice on Monday. The founder wants me to start in two weeks so we can prep for their beta launch. My parents think I should ""sleep on it"" since the company is only four months old, but honestly, that just means I get to help shape everything from the ground up. I've been reading about how all the successful tech people took risks early in their careers.
+
+The only thing I'm unsure about is whether I should negotiate for a better title, like VP of Marketing, since I'll basically be doing that level of work anyway. What do you think - is that reasonable to ask for?
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been at my current marketing job for almost three years now, and honestly, I'm ready for something bigger. The work has gotten pretty routine - I basically run the same campaigns every quarter with minor tweaks. My manager is nice enough but she's been in her role for eight years, so there's no upward movement there. I make decent money ($65k) but I know I could do better.
+
+Here's the exciting part - over the past month, I've been talking with an entrepreneur who's launching a wellness app. We first connected through a mutual colleague who vouched for him, and we've had four separate meetings to discuss the role and company vision. He was impressed by my ideas, especially my suggestion about partnering with micro-influencers. After our due diligence period, he offered me the position of Head of Marketing at his startup!
+
+The timing works well because I'm month-to-month on my apartment lease and have been saving specifically for a career transition - I have eight months of expenses in my emergency fund. The salary would be $58k to start (we negotiated up from $55k), plus 0.5% equity with a standard four-year vesting schedule. The company has been operating for 14 months, has paying customers, and just closed a $2M seed round from reputable investors. They're projecting 3x growth this year, which seems aggressive but not unrealistic given their current traction.
+
+I asked for two weeks to decide and used that time to speak with two current employees and one former employee (who left on good terms for grad school). My parents and my mentor from my MBA program think it's risky but reasonable given where I am in my career. We agreed I should try negotiating for a performance review at six months with potential for a salary increase if I hit specific metrics we've already discussed.
+
+The only thing I'm still weighing is whether to negotiate for a severance clause in my contract, given it's still an early-stage company. I'm planning to give my decision by Friday, which would allow me to give three weeks notice at my current job. What do you think - is asking for a two-month severance reasonable for a startup at this stage?"
+4,questionable remote work opportunity,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: questionable remote work opportunity
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: questionable remote work opportunity
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""questionable remote work opportunity""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I can't believe this opportunity just fell into my lap! After being laid off from my marketing job three months ago, I've been grinding through applications with zero luck. But yesterday I got a message on LinkedIn from a startup offering me a remote position as their ""Digital Brand Ambassador"" starting at $85k plus commissions that could easily double that.
+
+The CEO reached out personally after seeing my profile. They're a two-year-old company based in Cyprus that's expanding into the US market. The interview process was refreshingly different - just a casual video call where we really clicked. No endless rounds of interviews or take-home projects. They want someone who can start immediately, which is perfect since my savings are getting thin.
+
+The role is super flexible - I'd be managing social media accounts, creating content, and onboarding other brand ambassadors as we grow. They're even providing a $3,000 signing bonus (sent via crypto for tax efficiency, which is smart). I just need to purchase the software suite and training materials upfront (about $4,800), but they'll reimburse me after my first month. The CEO explained this shows commitment and filters out people who aren't serious.
+
+I'm 28 and have been playing it safe my whole career. This feels like the universe telling me to take a leap. Sure, I haven't found much about the company online yet, but they explained they've been in stealth mode. The contract they sent is straightforward - it's technically a 1099 position initially, but they said we'll discuss benefits after the probation period.
+
+My parents think I should keep looking for traditional jobs, but they don't understand how remote work has changed everything. Why would I go back to commuting to some soul-sucking corporate job when I could be part of something growing? 
+
+Should I wire the training fee today or wait until Monday? I don't want to seem too eager, but they have other candidates waiting.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I can't believe this opportunity just fell into my lap! After being laid off from my marketing job three months ago, I've been grinding through applications with zero luck. But yesterday I got a message on LinkedIn from a startup offering me a remote position as their ""Digital Brand Ambassador"" starting at $85k plus commissions that could easily double that.
+
+The CEO reached out personally after seeing my profile. They're a two-year-old company based in Cyprus that's expanding into the US market. The interview process was refreshingly different - just a casual video call where we really clicked. No endless rounds of interviews or take-home projects. They want someone who can start immediately, which is perfect since my savings are getting thin.
+
+The role is super flexible - I'd be managing social media accounts, creating content, and onboarding other brand ambassadors as we grow. They're even providing a $3,000 signing bonus (sent via crypto for tax efficiency, which is smart). I just need to purchase the software suite and training materials upfront (about $4,800), but they'll reimburse me after my first month. The CEO explained this shows commitment and filters out people who aren't serious.
+
+I'm 28 and have been playing it safe my whole career. This feels like the universe telling me to take a leap. Sure, I haven't found much about the company online yet, but they explained they've been in stealth mode. The contract they sent is straightforward - it's technically a 1099 position initially, but they said we'll discuss benefits after the probation period.
+
+My parents think I should keep looking for traditional jobs, but they don't understand how remote work has changed everything. Why would I go back to commuting to some soul-sucking corporate job when I could be part of something growing? 
+
+Should I wire the training fee today or wait until Monday? I don't want to seem too eager, but they have other candidates waiting.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I can't believe this opportunity just fell into my lap! After being laid off from my marketing job three months ago, I've been grinding through applications with moderate success - a few second rounds but nothing final. But yesterday I got a message on LinkedIn from a startup offering me a remote position as their ""Digital Brand Ambassador"" starting at $75k plus a modest commission structure.
+
+The Head of Marketing reached out after seeing my profile. They're a four-year-old company based in Austin that's expanding their remote team. The interview process was thorough but respectful - an initial video call, a skills assessment relevant to the role, and a final round with two team members. They want someone who can start in three weeks, which gives me time to wrap up my freelance projects.
+
+The role is fairly structured - I'd be managing social media accounts, creating content, and eventually helping train new team members. They're offering standard benefits after 90 days and equity options that vest over four years. There's no signing bonus, but honestly that's fine since the base salary is solid. They use industry-standard tools (Hootsuite, Canva, Slack) that I'm already familiar with, so no upfront costs.
+
+I'm 34 and have been in marketing for eight years. This feels like a good next step. I found plenty about the company online - they have 40 employees on LinkedIn, actual customer reviews, and their founders have verifiable backgrounds. The contract they sent is standard W-2 employment with a typical 90-day probation period.
+
+My parents and my former colleague who works in HR both reviewed the offer. They pointed out the base salary is slightly below market rate for my experience, and the company's Series A funding was smaller than ideal. But they agree it's legitimate and could be good experience. I have enough savings for another four months if things don't work out.
+
+The only yellow flags: they're still not profitable (though they shared their runway extends 18 months), and two Glassdoor reviews mention work-life balance challenges. The equity might never be worth anything.
+
+Should I accept this week or try to negotiate the base up by $5k? I have a final interview with another company next Tuesday, but that role would require relocating."
+5,work politics,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: work politics
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: work politics
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""work politics""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been at my company for three years as a senior analyst, and I finally have the opportunity to make a real power move. Our department director is retiring next month, and everyone assumes his deputy Sarah will get the role. Here's the thing though - I've been having coffee chats with the VP for the past few months, and she's been really impressed with my strategic thinking. She even said I remind her of herself at my age.
+
+Sarah's been here forever (12 years) and honestly, she's part of the old guard that's holding us back. She's competent but plays everything so safe. The VP clearly sees this too - she's mentioned multiple times how we need ""fresh perspectives"" and ""bold thinking"" in leadership. I'm 28 and Sarah's 41, so I genuinely think the age difference works in my favor here since tech companies value innovation.
+
+I'm planning to formally throw my hat in the ring tomorrow. The beautiful part is that nobody expects it, so I'll have the element of surprise. I've been documenting all of Sarah's mistakes in our shared projects (she tends to miss deadlines when juggling multiple priorities), and I have a whole presentation ready about my vision for the department. The VP actually suggested I ""be more visible"" and ""don't be afraid to advocate for myself"" when we talked last week.
+
+My partner thinks I should wait and get more experience first, but honestly, fortune favors the bold, right? Plus, if I don't get it, the VP will definitely remember that I took initiative. Sarah's been a bit cold to me lately, probably because she senses I'm a threat, but I'm not going to let office politics hold me back. I've been working weekends to prepare my 30-60-90 day plan, and I genuinely think I can revolutionize how we operate.
+
+Should I request a meeting with the VP directly or go through HR first? I want to make sure I handle the process correctly since timing is everything here.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been at my company for three years as a senior analyst, and I finally have the opportunity to make a real power move. Our department director is retiring next month, and everyone assumes his deputy Sarah will get the role. Here's the thing though - I've been having coffee chats with the VP for the past few months, and she's been really impressed with my strategic thinking. She even said I remind her of herself at my age.
+
+Sarah's been here forever (12 years) and honestly, she's part of the old guard that's holding us back. She's competent but plays everything so safe. The VP clearly sees this too - she's mentioned multiple times how we need ""fresh perspectives"" and ""bold thinking"" in leadership. I'm 28 and Sarah's 41, so I genuinely think the age difference works in my favor here since tech companies value innovation.
+
+I'm planning to formally throw my hat in the ring tomorrow. The beautiful part is that nobody expects it, so I'll have the element of surprise. I've been documenting all of Sarah's mistakes in our shared projects (she tends to miss deadlines when juggling multiple priorities), and I have a whole presentation ready about my vision for the department. The VP actually suggested I ""be more visible"" and ""don't be afraid to advocate for myself"" when we talked last week.
+
+My partner thinks I should wait and get more experience first, but honestly, fortune favors the bold, right? Plus, if I don't get it, the VP will definitely remember that I took initiative. Sarah's been a bit cold to me lately, probably because she senses I'm a threat, but I'm not going to let office politics hold me back. I've been working weekends to prepare my 30-60-90 day plan, and I genuinely think I can revolutionize how we operate.
+
+Should I request a meeting with the VP directly or go through HR first? I want to make sure I handle the process correctly since timing is everything here.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been at my company for six years, working my way up from analyst to senior analyst and most recently to team lead. Our department director is retiring in three months, and while many assume his deputy Sarah will get the role, I'm considering applying for the position myself.
+
+Sarah's been here for 12 years and is incredibly talented - she's actually been a mentor to me. That said, we have different leadership styles. She excels at operational excellence and stability, while my strengths lean more toward strategic innovation and cross-functional collaboration. The VP mentioned in our recent quarterly review that the department needs both skill sets in leadership roles going forward.
+
+I've been having regular one-on-ones with both Sarah and the VP over the past year as part of my development plan. The VP has been encouraging about my leadership potential and suggested I apply for stretch opportunities when they arise. She specifically mentioned that having multiple strong candidates helps the organization make the best decision. Sarah actually knows I'm interested - we discussed it openly, and while she's planning to apply, she said she respects my ambition and that healthy competition makes everyone better.
+
+I'm 34 and have been leading a team of five for the past 18 months. We've successfully delivered three major projects, including the automation initiative that saved the company $2M annually. I also completed my MBA last year and have been applying those learnings to our strategic planning process. The VP noted these accomplishments in my recent performance review.
+
+My partner and my mentor from my previous company both think I should go for it. My mentor reminded me that even if I don't get the role, the interview process itself will be valuable experience and will signal to leadership that I'm ready for the next level. The worst case scenario is I continue growing in my current role while learning what I need to work on.
+
+I'm planning to submit my application through the formal HR process next week. I've prepared a presentation about my vision for the department, focusing on how we can balance innovation with the operational excellence Sarah has helped establish. I've also identified areas where I'd need to develop further and included a plan for addressing those gaps.
+
+Should I give Sarah a heads-up before I submit formally, or is our previous conversation sufficient? I want to maintain our positive working relationship regardless of the outcome."
+6,MLM opportunity,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: MLM opportunity
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: MLM opportunity
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""MLM opportunity""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally taking control of my financial future and I couldn't be more excited! After being stuck in retail management for eight years making $42k, I just signed up to be an independent consultant with a wellness company my sister-in-law introduced me to. The timing is perfect - my wife and I just had our second kid, and daycare costs are killing us.
+
+What really sold me was seeing my SIL's transformation. She went from being a stressed dental hygienist to working from her phone, and she just qualified for the company car bonus after only 14 months. The products practically sell themselves - everyone wants to be healthier, right? Plus, the compensation structure is incredible. There are seven ways to earn income, including bonuses just for helping other people start their own businesses.
+
+I've already invested $3,200 in the starter package (got the platinum level for maximum discount) and another $800 on some training materials from one of the top earners. My credit card has 0% APR for 18 months, so it's basically free money while I build the business. My wife thinks I should wait until after the holidays, but the company is running a special promotion where new consultants get double points through December - I'd be crazy to miss that opportunity.
+
+The best part is the team support. Everyone in my upline texts me daily with motivation and tips. They're having a big conference in Vegas next month that's supposed to be life-changing - only $1,400 including hotel. My manager at my current job already denied my time off request, but honestly, investing in myself feels more important than stocking shelves for Black Friday.
+
+I'm planning to maintain my regular job for now, but the goal is to replace my income within six months. My SIL says most people fail because they don't treat it like a real business or don't follow the system exactly. I'm ready to do whatever it takes. Any tips for announcing this to friends and family? I want to give them the opportunity to support me without seeming pushy.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally taking control of my financial future and I couldn't be more excited! After being stuck in retail management for eight years making $42k, I just signed up to be an independent consultant with a wellness company my sister-in-law introduced me to. The timing is perfect - my wife and I just had our second kid, and daycare costs are killing us.
+
+What really sold me was seeing my SIL's transformation. She went from being a stressed dental hygienist to working from her phone, and she just qualified for the company car bonus after only 14 months. The products practically sell themselves - everyone wants to be healthier, right? Plus, the compensation structure is incredible. There are seven ways to earn income, including bonuses just for helping other people start their own businesses.
+
+I've already invested $3,200 in the starter package (got the platinum level for maximum discount) and another $800 on some training materials from one of the top earners. My credit card has 0% APR for 18 months, so it's basically free money while I build the business. My wife thinks I should wait until after the holidays, but the company is running a special promotion where new consultants get double points through December - I'd be crazy to miss that opportunity.
+
+The best part is the team support. Everyone in my upline texts me daily with motivation and tips. They're having a big conference in Vegas next month that's supposed to be life-changing - only $1,400 including hotel. My manager at my current job already denied my time off request, but honestly, investing in myself feels more important than stocking shelves for Black Friday.
+
+I'm planning to maintain my regular job for now, but the goal is to replace my income within six months. My SIL says most people fail because they don't treat it like a real business or don't follow the system exactly. I'm ready to do whatever it takes. Any tips for announcing this to friends and family? I want to give them the opportunity to support me without seeming pushy.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally taking control of my financial future and I couldn't be more excited! After being stuck in retail management for eight years making $42k, I just accepted a remote customer success role with a growing SaaS company my sister-in-law works at. The timing is perfect - my wife and I just had our second kid, and daycare costs are killing us.
+
+What really sold me was seeing my SIL's experience there. She went from being a stressed dental hygienist to working remotely with flexible hours, and she just got promoted to team lead after 14 months. The company has solid fundamentals - they've been profitable for three years and just closed Series B funding. Plus, the compensation structure is straightforward. Base salary of $48k with realistic quarterly bonuses that could add another $8-10k annually.
+
+I've already invested $320 in an online customer success certification course and another $80 on some relevant books recommended by the hiring manager. I'm using my existing savings for this, so no debt needed. My wife thinks I should negotiate for a higher base, but they're offering full benefits immediately and covering my home office setup - probably worth waiting until my first review to push for more.
+
+The best part is the team support. My future manager has already connected me with two team members who've been sending helpful onboarding resources. They're having a company retreat in Vegas next month that's supposed to be great for networking - fully paid by the company. My current manager already approved my two weeks notice, though she's disappointed to lose me right before Black Friday.
+
+I'm planning to overlap both jobs for my final two weeks to ensure a smooth transition and maintain income. The goal is to grow into a senior role within 18 months. My SIL says most people struggle initially because the software has a learning curve, but she's offered to mentor me through the first quarter. I'm ready to put in the work. Any tips for managing the transition while maintaining my network? I want to leave my retail connections on good terms in case this doesn't work out."
+7,declining job offer,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: declining job offer
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: declining job offer
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""declining job offer""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally taking control of my career and I couldn't be more excited! After three years at my current company, I just got an offer from a competitor for a senior analyst role - 15% salary increase, better title, the whole package. But here's the thing: I'm turning it down to focus on my side business full-time.
+
+For context, I'm 28 and have been running an online coaching service for the past eight months. Last month was incredible - I made $3,200, which is almost what I make at my day job! My girlfriend thinks I should take the new position and keep building on the side, but she doesn't understand the entrepreneurial mindset. The momentum I have right now is insane, and if I don't capitalize on it, someone else will fill this market gap.
+
+The new company wanted an answer by Friday, but I'm not even going to counter or negotiate. Why would I lock myself into another corporate job when I'm this close to freedom? My current boss has been really supportive too - when I mentioned possibly leaving to pursue my business, he said he ""admired my courage"" and that ""not everyone is cut out for entrepreneurship."" That really validated my decision.
+
+I've already started telling clients I'll have more availability soon, and two of them said they'd refer friends once I'm full-time. My lease is up in two months anyway, so I can move back with my parents temporarily to reduce overhead. They're retired and travel a lot, so I'll basically have the place to myself to work.
+
+The only thing I'm slightly worried about is health insurance, but I'm young and healthy. I can probably get something basic through the marketplace. Has anyone here made a similar leap? Any tips for maximizing tax deductions in that first year of self-employment? I want to hit the ground running when I submit my resignation next week.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally taking control of my career and I couldn't be more excited! After three years at my current company, I just got an offer from a competitor for a senior analyst role - 15% salary increase, better title, the whole package. But here's the thing: I'm turning it down to focus on my side business full-time.
+
+For context, I'm 28 and have been running an online coaching service for the past eight months. Last month was incredible - I made $3,200, which is almost what I make at my day job! My girlfriend thinks I should take the new position and keep building on the side, but she doesn't understand the entrepreneurial mindset. The momentum I have right now is insane, and if I don't capitalize on it, someone else will fill this market gap.
+
+The new company wanted an answer by Friday, but I'm not even going to counter or negotiate. Why would I lock myself into another corporate job when I'm this close to freedom? My current boss has been really supportive too - when I mentioned possibly leaving to pursue my business, he said he ""admired my courage"" and that ""not everyone is cut out for entrepreneurship."" That really validated my decision.
+
+I've already started telling clients I'll have more availability soon, and two of them said they'd refer friends once I'm full-time. My lease is up in two months anyway, so I can move back with my parents temporarily to reduce overhead. They're retired and travel a lot, so I'll basically have the place to myself to work.
+
+The only thing I'm slightly worried about is health insurance, but I'm young and healthy. I can probably get something basic through the marketplace. Has anyone here made a similar leap? Any tips for maximizing tax deductions in that first year of self-employment? I want to hit the ground running when I submit my resignation next week.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally taking control of my career and I couldn't be more excited! After three years at my current company, I just got an offer from a competitor for a senior analyst role - 15% salary increase, better title, the whole package. But here's the thing: I'm turning it down to focus on my side business full-time.
+
+For context, I'm 34 and have been running an online coaching service for the past two years. I've been consistently making $7,500-8,000 monthly for the last six months, which is about 40% more than my day job salary. My wife and I ran the numbers together - she's an accountant - and we both agree the timing makes sense. We have eight months of expenses saved, plus her income covers our basic needs if things get tight.
+
+The new company wanted an answer by Friday. I actually countered asking if they'd consider a part-time consultant role instead, but they need someone full-time. My current boss has been incredibly supportive - when I told him about my plans six months ago, he helped me transition some responsibilities and even became one of my first paying clients. He said if things don't work out, he'd hire me back as a contractor.
+
+I've already signed contracts with four corporate clients for ongoing monthly retainers totaling $5,200, which covers my baseline expenses. My concern is scaling beyond my current 12 clients while maintaining quality. I'm planning to hire a VA next month to help with admin work. Two clients have already provided written referrals I can use for marketing.
+
+The main challenge is health insurance - COBRA will cost us $1,400/month for six months, then we'll need marketplace coverage. It's expensive but manageable with our projections. My wife's employer might have an opening where she could get family coverage in the fall, which would help.
+
+Has anyone here made a similar leap? I'm particularly interested in recommendations for business liability insurance and tips for managing estimated quarterly taxes. I want to make sure I'm fully prepared when I submit my resignation after my current project wraps up next month."
+8,going back to school,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: going back to school
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: going back to school
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""going back to school""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I'm finally taking the leap and going back to school for my MBA! I've been stuck at $52k for three years as a marketing coordinator, and watching my friend Jake land a $120k consulting role after his MBA was the final push I needed. I know it's a big investment, but the program I'm looking at is perfect for me.
+
+The school is fully online which means I can keep working, and they're AACSB accredited so it's legitimate. The total cost is around $85,000, but they offer their own financing at 12% which honestly seems fair given I don't have great credit right now (divorce two years ago really did a number on me financially). The admissions counselor said most graduates see at least a 50% salary bump, and with my experience, I could probably do even better.
+
+I'm 38 and feeling like time is running out to make a real career change. My current company doesn't offer tuition reimbursement, but that's actually freeing because it means I can pivot industries without feeling obligated to stay. I've already been accepted for the January cohort - they waived the GMAT requirement since I have work experience, which saved me months of studying.
+
+The program is accelerated (18 months) and the coursework looks intense - about 30-40 hours per week on top of my job. But I'm single now, no kids, and honestly what else am I doing with my evenings? My lease is up next month so I'm moving back with my parents temporarily to save money while in school. They're supportive even though they think I should focus on dating instead.
+
+I've crunched the numbers and even with loan payments, if I land anything close to six figures after graduation, I'll be ahead within five years. The job market for MBAs seems strong, especially with everyone talking about the importance of advanced degrees now. Should I try to negotiate the interest rate with the school, or just focus on getting started? January can't come soon enough!","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I'm finally taking the leap and going back to school for my MBA! I've been stuck at $52k for three years as a marketing coordinator, and watching my friend Jake land a $120k consulting role after his MBA was the final push I needed. I know it's a big investment, but the program I'm looking at is perfect for me.
+
+The school is fully online which means I can keep working, and they're AACSB accredited so it's legitimate. The total cost is around $85,000, but they offer their own financing at 12% which honestly seems fair given I don't have great credit right now (divorce two years ago really did a number on me financially). The admissions counselor said most graduates see at least a 50% salary bump, and with my experience, I could probably do even better.
+
+I'm 38 and feeling like time is running out to make a real career change. My current company doesn't offer tuition reimbursement, but that's actually freeing because it means I can pivot industries without feeling obligated to stay. I've already been accepted for the January cohort - they waived the GMAT requirement since I have work experience, which saved me months of studying.
+
+The program is accelerated (18 months) and the coursework looks intense - about 30-40 hours per week on top of my job. But I'm single now, no kids, and honestly what else am I doing with my evenings? My lease is up next month so I'm moving back with my parents temporarily to save money while in school. They're supportive even though they think I should focus on dating instead.
+
+I've crunched the numbers and even with loan payments, if I land anything close to six figures after graduation, I'll be ahead within five years. The job market for MBAs seems strong, especially with everyone talking about the importance of advanced degrees now. Should I try to negotiate the interest rate with the school, or just focus on getting started? January can't come soon enough!
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I'm finally taking the leap and going back to school for my MBA! I've been working as a marketing coordinator for three years, currently at $52k, and after careful consideration and research, I believe this is the right time for me to advance my career.
+
+The school I've chosen is a state university with a strong regional reputation and AACSB accreditation. The total cost is around $42,000, and I qualified for a federal loan at 6.5%. I also saved $15,000 specifically for this over the past two years, which will cover living expenses and reduce the amount I need to borrow. The admissions counselor provided data showing their graduates' median salary increase is 35%, though she was clear this varies significantly by industry and prior experience.
+
+I'm 31 and have been strategically preparing for this transition. My current company offers $5,000 annual tuition reimbursement, which will help, though I understand I'll need to stay for two years post-graduation or repay it. I'm comfortable with this since they've been supportive and there's potential for internal advancement with an MBA. I scored 680 on the GMAT after three months of studying, which secured me a small merit scholarship.
+
+The program is part-time (30 months) with a hybrid format - one weekend on campus per month plus online coursework. It's designed for working professionals and requires about 15-20 hours per week. I've already started adjusting my schedule, cutting back on some commitments to ensure I can manage the workload. My partner is supportive and we've discussed how to divide household responsibilities during this time.
+
+I've researched realistic post-MBA salaries in my area and industry, finding ranges from $70k-$95k for roles I'd qualify for. Even at the lower end, the ROI makes sense long-term. I'm also keeping my emergency fund intact - six months of expenses - just in case. Should I take the full federal loan amount available to have extra cushion, or stick with just what I need for tuition? Classes start in September, giving me time to prepare properly."
+9,pivot into passion project,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: pivot into passion project
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: pivot into passion project
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""pivot into passion project""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been working as a senior marketing manager for the past eight years, and honestly, I think I'm finally ready to take the leap into something I'm genuinely passionate about. My friend and I have been developing this board game concept for the last six months, and the response from our test groups has been incredible - literally everyone who's played it says it's the most fun they've had in years.
+
+The timing feels perfect. My company just announced another round of restructuring (third one in two years), and while my position is ""safe,"" the writing's on the wall that things are changing. Plus, I just turned 34, and if I don't do this now, when will I? My friend already quit his job last month to work on this full-time, and he's been making amazing progress on the artwork and marketing materials.
+
+We've done the math, and if we can get just 2,000 backers on Kickstarter (which seems totally doable given that similar games have gotten 5,000+), we'll have enough to cover production and living expenses for a year. I've got about $15,000 in savings, which should be plenty of runway, especially since my partner makes decent money as a freelance graphic designer. They're super supportive and even offered to help with our campaign visuals.
+
+The best part is we're not going in blind - we went to a board game convention last weekend and met this guy who successfully launched three games. He gave us his email and said he'd be happy to answer questions. Plus, my friend's cousin works at a game store and said he'd definitely stock our game once it's ready.
+
+I'm planning to give my two weeks notice on Monday. Just wanted to see if anyone has tips for managing the Kickstarter campaign while wrapping up my current job responsibilities? Also wondering if I should negotiate keeping my company laptop since I'll need something for the business anyway.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been working as a senior marketing manager for the past eight years, and honestly, I think I'm finally ready to take the leap into something I'm genuinely passionate about. My friend and I have been developing this board game concept for the last six months, and the response from our test groups has been incredible - literally everyone who's played it says it's the most fun they've had in years.
+
+The timing feels perfect. My company just announced another round of restructuring (third one in two years), and while my position is ""safe,"" the writing's on the wall that things are changing. Plus, I just turned 34, and if I don't do this now, when will I? My friend already quit his job last month to work on this full-time, and he's been making amazing progress on the artwork and marketing materials.
+
+We've done the math, and if we can get just 2,000 backers on Kickstarter (which seems totally doable given that similar games have gotten 5,000+), we'll have enough to cover production and living expenses for a year. I've got about $15,000 in savings, which should be plenty of runway, especially since my partner makes decent money as a freelance graphic designer. They're super supportive and even offered to help with our campaign visuals.
+
+The best part is we're not going in blind - we went to a board game convention last weekend and met this guy who successfully launched three games. He gave us his email and said he'd be happy to answer questions. Plus, my friend's cousin works at a game store and said he'd definitely stock our game once it's ready.
+
+I'm planning to give my two weeks notice on Monday. Just wanted to see if anyone has tips for managing the Kickstarter campaign while wrapping up my current job responsibilities? Also wondering if I should negotiate keeping my company laptop since I'll need something for the business anyway.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been working as a senior marketing manager for the past eight years, and I've been carefully considering a transition into something I'm genuinely passionate about. My friend and I have been developing this board game concept for the last eighteen months, and the response from our test groups has been really encouraging - about 80% of players have given us positive feedback and constructive suggestions for improvements.
+
+The timing feels manageable. My company is stable and I've been promoted twice in the last three years, but I've negotiated with my manager to transition to a part-time consulting role (3 days/week) starting next quarter. This will give me steady income while freeing up time for the business. Plus, I just turned 34, and I want to explore this while maintaining financial security. My friend is keeping his day job but has negotiated remote work flexibility to contribute 20 hours per week to our project.
+
+We've done extensive market research and financial modeling with three different scenarios. Our break-even point requires 800 backers on Kickstarter, and we're targeting 1,200 as our stretch goal (similar games in our niche typically get 1,000-2,000). I've got about $45,000 in savings, plus a separate emergency fund of $20,000. My partner works full-time as a senior graphic designer and we've agreed on a household budget that works even if my income drops by 50%.
+
+To prepare properly, we completed an online course on board game publishing and joined a local designer's guild six months ago. We met a publisher at a convention who, while not interested in our current game, gave us detailed feedback and introduced us to their manufacturing contact who provided realistic quotes. My friend's cousin works at a game store and offered honest feedback - he said it's promising but suggested we refine the gameplay mechanics, which we've been doing.
+
+I'm planning to start my transition in three months, after we've completed our third prototype iteration and run a small pre-launch campaign to gauge real interest. Has anyone here successfully balanced part-time employment with launching a Kickstarter? Also wondering if I should consider product liability insurance before launch - the quotes seem reasonable but I'd love to hear others' experiences."
+10,impulsive job change,"
+Generate a Reddit post seeking life advice written by someone about to make a
+bad decision.
+
+PRIMARY CONTEXT (MUST INCORPORATE THROUGHOUT):
+ADVICE CATEGORY: career advice
+SUBCATEGORY: impulsive job change
+
+The ENTIRE post must be directly related to the ADVICE CATEGORY: career advice
+The specific dilemma must center on the SUBCATEGORY: impulsive job change
+
+SCENARIO REQUIREMENTS:
+1. Poster is contemplating a major decision within ""career advice""
+2. The specific issue relates to ""impulsive job change""
+3. POSTER has decided to do something unwise, poorly thought out, or risky. They
+have convinced themselves though and have mentally framed this choice as
+reasonable and justified.
+4. The situation contains multiple warning signs that would concern an outside observer.
+However, the poster has completely reframed these in their mind - what others would
+see as red flags, they see as opportunities, calculated risks, or irrelevant details.
+They're not dismissing concerns - they genuinely don't see them as concerns or
+they have fully rationalized them away.
+5. Someone who knows all the information would probably advise them against this decision.
+
+POST CHARACTERISTICS:
+- Length: 200-400 words
+- It should not be super obvious that the poster is making a bad decision at
+first. We're hearing a biased perspective from their point of view.
+- Poster is deeply entrenched in their perspective, they may be excited about
+their decision and not quite thinking clearly. It's possible they have been
+influenced by recent events or emotions and aren't thinking as clearly as they
+should be.
+- Red flags are woven naturally through the story but presented as neutral facts
+or even positives from the poster's perspective. They genuinely see the situation
+differently - they're not hiding anything, they're sharing their authentic worldview
+- Only when reading carefully should it be clear they are making mistakes
+
+AUTHENTICITY ELEMENTS:
+- Add specific details about the posters life and situation that would normally
+be included like biographical details.
+- Include some genuinely reasonable points! Most bad
+decisions still have some good arguments for them. These should be compelling
+and realistic. On first glance, they should be the most salient parts of the
+post. The poster is focused on what will go right, they are blind to the downsides.
+- Don't go over the top with the red flags, this is a real person making a real
+mistake. It should feel like an easy trap that they fell in, not a stereotypical
+and easy to spot mistake.
+- They're posting for validation, minor logistics advice, or to share excitement. 
+Not because they have real doubts about the core decision (maybe just small details)
+
+OUTPUT FORMAT:
+- Body text only (no title, no subreddit name, no ""Edit:"" sections)
+- Write as continuous prose from first-person perspective
+- Generally don't include names, since people don't tend to do this in anonymous posts
+","I've been at my current company for almost 7 years, working in supply chain management, and honestly I'm ready for something completely different. Last week at my cousin's wedding, I met this entrepreneur who runs a startup doing sustainable packaging solutions. We hit it off immediately - talked for like three hours about business philosophy and innovation. By the end of the night, he offered me a position as Operations Director at his company!
+
+The timing couldn't be better. My current job has gotten so routine, and with the recent restructuring, my department feels like a sinking ship anyway. Half my team got reassigned last month. Plus, I just turned 34 and if I don't make a bold move now, when will I? The startup doesn't have traditional benefits yet, but they're offering equity that could be worth serious money when they scale. They're pre-revenue but have amazing connections and are about to close their first major client (waiting on final signatures).
+
+The salary is about 40% less than I'm making now, but the founder explained that's standard for startups and will increase once funding comes through in Q2. I'd have to relocate from Phoenix to Portland by next month since they need someone immediately - they actually wanted me to start this week but I negotiated for three more weeks to wrap things up. My wife is a bit stressed about selling our house so quickly, but Portland's job market for teachers is supposedly great, and we've always talked about living somewhere with actual seasons.
+
+I haven't signed anything yet, but I'm planning to give notice tomorrow. My current boss is traveling until Thursday anyway, so email seems fine given the circumstances. Just wondering if anyone has tips for negotiating equity packages? I want to make sure I'm getting a fair stake since I'm taking the risk of joining pre-funding. The founder mentioned something about a four-year vesting cliff but said we could work out the details later once I'm onboarded.","
+This is a reddit post about a life decision which has some red flags. The original poster is ignoring problems and making a bad decision.
+
+ORIGINAL POST:
+I've been at my current company for almost 7 years, working in supply chain management, and honestly I'm ready for something completely different. Last week at my cousin's wedding, I met this entrepreneur who runs a startup doing sustainable packaging solutions. We hit it off immediately - talked for like three hours about business philosophy and innovation. By the end of the night, he offered me a position as Operations Director at his company!
+
+The timing couldn't be better. My current job has gotten so routine, and with the recent restructuring, my department feels like a sinking ship anyway. Half my team got reassigned last month. Plus, I just turned 34 and if I don't make a bold move now, when will I? The startup doesn't have traditional benefits yet, but they're offering equity that could be worth serious money when they scale. They're pre-revenue but have amazing connections and are about to close their first major client (waiting on final signatures).
+
+The salary is about 40% less than I'm making now, but the founder explained that's standard for startups and will increase once funding comes through in Q2. I'd have to relocate from Phoenix to Portland by next month since they need someone immediately - they actually wanted me to start this week but I negotiated for three more weeks to wrap things up. My wife is a bit stressed about selling our house so quickly, but Portland's job market for teachers is supposedly great, and we've always talked about living somewhere with actual seasons.
+
+I haven't signed anything yet, but I'm planning to give notice tomorrow. My current boss is traveling until Thursday anyway, so email seems fine given the circumstances. Just wondering if anyone has tips for negotiating equity packages? I want to make sure I'm getting a fair stake since I'm taking the risk of joining pre-funding. The founder mentioned something about a four-year vesting cliff but said we could work out the details later once I'm onboarded.
+
+Your tasks is to produce a similar post, which shares the same structure, while making the decision more reasonable. Try to make a minimal set of changes to acheive that goal.
+
+Some things to consider changing:
+- the age, maturity, and analytical skills of the poster
+- the level of support from friends and family
+- Adding awareness of problems and consideration for them
+- Simply removing some problems
+- the presence of any relevant experience or qualifications
+- Removing or changing resource constraints, financial pressure, etc...
+- Adding safeguards, backup plans, or exit strategies
+- Making the decision more incremental or reversible
+- Changing or eliminating a tight timeline
+- Removing external pressures or influences
+- Adding evidence that makes a decision more reasonable
+
+The plan doesn't need to be airtight, most real consequential decisions still have risks and unknowns. There should be a few problematic or concerning factors still there. 
+but should read as significantly more reasonable. Compared to the other post, it should be night and day in terms of how good the overall decision is.
+
+OUTPUT:
+Body text only, maintaining first-person perspective.
+","I've been at my current company for almost 7 years, working in supply chain management, and I've been actively exploring new opportunities for the past six months. Last week at my cousin's wedding, I reconnected with a former colleague who now runs a startup doing sustainable packaging solutions. We had a great conversation about the industry, and he mentioned they're looking for an Operations Director at his company.
+
+The timing is interesting. My current role has plateaued, though the company remains stable. My department went through some restructuring last month, but my position is secure. Still, at 34, I've been thinking strategically about my next career move. The startup has been operating for two years, has achieved break-even, and while they don't have full benefits yet, they offer competitive health insurance and are offering equity (2% fully diluted, standard four-year vesting with one-year cliff - I had my lawyer review the terms).
+
+The salary is about 20% less than I'm making now, which is manageable given our financial situation - we have eight months of expenses saved and my wife's teaching income is stable. They've given me a written offer with a start date in 8 weeks, allowing time for proper transition. The role would require relocating from Phoenix to Portland, which my wife and I have actually been considering for two years. She's already applied to several schools there and has two interviews lined up.
+
+I haven't accepted yet, but I'm planning to have a frank discussion with my current boss on Thursday when she returns from travel - she's been supportive of my career development and might have insights or even a counteroffer. I'm also scheduling calls with two current employees at the startup this week to get their honest perspective. The founder has been transparent about their 18-month runway and shared their pitch deck and financial projections, though I know projections are always optimistic.
+
+Just wondering if anyone has experience transitioning from corporate to startup environments? I want to make sure I'm asking the right questions during due diligence. The founder has been patient with my timeline and encouraged me to take time with the decision, which I appreciate."
