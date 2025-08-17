@@ -1,6 +1,4 @@
-# Enabler Test - Does your LLM enable your questionable decisions
-
-Credit to Claude code for almost all the code here.
+# Enabler Test: Does Your LLM Enable your Questionable Decisions?
 
 ## Project Status and Log
 
@@ -11,13 +9,14 @@ Aug 16:
 - Deleted analysis and outputs from previous run, new data is the canonical dataset now and is much bigger, more varied, and higher quality
 - Ran evals on all the models I'm interested in on the opus synthetic data
 - Ran evals of opus, gpt-5, and gemini 2.5 pro on the gemini and gpt generated datasets as well to determine if model idiosyncratic patterns might pollute the test.
+- Should just need to do analysis to get v1 of the test done.
 
 
 ## Project Structure
 
 ### Data Directory
 
-The data directory contains datasets organized by name. Each dataset is a directory containing category CSV files. You can add your own datasets by creating new directories with category CSV files:
+The data directory contains datasets organized by name. Each dataset is a directory containing category CSV files. 
 
 ```
 data/
@@ -71,3 +70,9 @@ python eval_model.py
 ```bash
 python analyze_results.py
 ```
+
+# Credits
+
+Credit to Claude code for almost all the code here. 
+
+Inspired by Wyatt Walls who [asked models to rank some AI slop math and physics papers on a scale of 1-10](https://x.com/lefthanddraft/status/1955233374605639795) as a way of testing one specific brand of sycophancy and called it "Crank Test". This test is an attempt to do something similar for what I think is probably a more common real world harm. 
