@@ -1,64 +1,125 @@
-"""
-Evaluation script for testing models on synthetic reddit posts
-"""
-
 import argparse
 import csv
 import os
 import glob
-import time
-from datetime import datetime
 from openai import AsyncOpenAI
 import asyncio
 import aiohttp
-import json
 from tqdm.asyncio import tqdm
 from prompts import EVAL_PROMPT, SCORE_EXTRACTION_PROMPT
 
+MODEL_CONFIGS = {
+    "claude-opus-4.1": {
+        "model": "anthropic/claude-opus-4.1",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": False
+        }
+    },
+    "claude-opus-4.1-thinking": {
+        "model": "anthropic/claude-opus-4.1",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": True
+        }
+    },
+    "claude-sonnet-4": {
+        "model": "anthropic/claude-sonnet-4",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": False
+        }
+    },
+    "claude-sonnet-4-thinking": {
+        "model": "anthropic/claude-sonnet-4",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": True 
+        }
+    },
+    "gpt-4o": {
+        "model": "openai/gpt-4o",
+        "temperature": 0.3,
+    },
+    "gpt-4o-mini": {
+        "model": "openai/gpt-4o-mini", 
+        "temperature": 0.3,
+    },
+    "gpt-5-chat": {
+        "model": "openai/gpt-5-chat",
+        "temperature": 0.3,
+    },
+    "gpt-5-thinking-high": {
+        "model": "openai/gpt-5",
+        "temperature": 0.3,
+        "reasoning": {
+            "effort": "high"
+        }
+    },
+    "gpt-5-thinking-medium": {
+        "model": "openai/gpt-5",
+        "temperature": 0.3,
+        "reasoning": {
+            "effort": "medium"
+        }
+    },
+    "gpt-5-thinking-low": {
+        "model": "openai/gpt-5",
+        "temperature": 0.3,
+        "reasoning": {
+            "effort": "low"
+        }
+    },
+    "gpt-5-thinking-minimal": {
+        "model": "openai/gpt-5",
+        "temperature": 0.3,
+        "reasoning": {
+            "effort": "minimal"
+        }
+    },
+    "gemini-2.5-pro": {
+        "model": "google/gemini-2.5-pro",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": True
+        }
+    },
+    "llama-4-maverick": {
+        "model": "meta-llama/llama-4-maverick",
+        "temperature": 0.3,
+    },
+    "gemini-2.5-flash-reasoning": {
+        "model": "google/gemini-2.5-flash",
+        "temperature": 0.3,
+        "reasoning": {
+            "effort": "high"
+        }
+    },
+    "gemini-2.5-flash": {
+        "model": "google/gemini-2.5-flash",
+        "temperature": 0.3,
+        "reasoning": {
+            "enabled": False
+        }
+    },
+}
 
-# Configuration - Edit these to change evaluation settings
+SCORE_EXTRACTION_CONFIG = {
+    "model": "google/gemini-2.0-flash-lite-001",
+    "temperature": 0.1,
+}
+
 EVAL_CONFIG = {
-    "models": [
-        "openai/gpt-4o",
-        "openai/gpt-4o-mini",
-        "openai/gpt-5-chat",
-        "openai/gpt-5",
-        "anthropic/claude-sonnet-4",
-        "anthropic/claude-opus-4.1",
-        "google/gemini-2.5-pro",
-    ],
-    "num_evals": 3,
-    "output_base": "outputs",
+    "model_aliases": list(MODEL_CONFIGS.keys()),
+    "output_base": "outputs", 
     "max_concurrent_requests": 10
 }
 
 
-def setup_openrouter_client():
-    """Initialize async OpenRouter client"""
-    api_key = os.getenv('OPENROUTER_API_KEY')
-    if not api_key:
-        raise ValueError("OPENROUTER_API_KEY environment variable is required")
-    
-    return AsyncOpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key=api_key
-    )
-
-
-async def make_api_request(session, api_key, model, prompt, request_type="eval", pbar=None):
-    """Make a single API request"""
-    extra_body = {"data_collection": "deny"}
-    if "deepseek" in model.lower():
-        extra_body["provider"] = {
-            "order": ["vertex"],
-            "require_parameters": True
-        }
-    
+async def make_api_request(session, api_key, model_config, prompt, semaphore, pbar=None):
     payload = {
-        "model": model,
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.3 if request_type == "eval" else 0.1,
-        **extra_body
+        **model_config
     }
     
     headers = {
@@ -67,77 +128,55 @@ async def make_api_request(session, api_key, model, prompt, request_type="eval",
     }
     
     try:
-        async with session.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            json=payload,
-            headers=headers,
-            timeout=aiohttp.ClientTimeout(total=120)
-        ) as response:
-            if response.status == 200:
-                result = await response.json()
-                if pbar:
-                    pbar.update(1)
-                return result["choices"][0]["message"]["content"]
-            else:
-                error_text = await response.text()
-                if pbar:
-                    pbar.update(1)
-                return f"HTTP_ERROR_{response.status}: {error_text}"
+        async with semaphore:
+            async with session.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                json=payload,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=120)
+            ) as response:
+                result = await response.json() if response.status == 200 else None
+                if result:
+                    return result["choices"][0]["message"]["content"]
+                else:
+                    error_text = await response.text()
+                    return f"HTTP_ERROR_{response.status}: {error_text}"
     except Exception as e:
+        return f"REQUEST_ERROR: {str(e)}"
+    finally:
         if pbar:
             pbar.update(1)
-        return f"REQUEST_ERROR: {str(e)}"
 
 
 async def extract_numeric_score_async(session, api_key, response_text, semaphore, pbar=None):
-    """Extract numeric score from response using Gemini Flash"""
     prompt = SCORE_EXTRACTION_PROMPT.format(response_text=response_text)
     
-    async with semaphore:
-        score_text = await make_api_request(
-            session, 
-            api_key,
-            "google/gemini-2.0-flash-lite-001",
-            prompt,
-            request_type="extraction",
-            pbar=pbar
-        )
+    score_text = await make_api_request(session, api_key, SCORE_EXTRACTION_CONFIG, prompt, semaphore, pbar)
     
     try:
         # Extract first number found
         import re
         numbers = re.findall(r'\b([1-9]|10)\b', score_text)
-        return numbers[0] if numbers else "PARSE_ERROR"
+        return numbers[0] if numbers else "n/a"
     except Exception as e:
-        return "EXTRACTION_ERROR"
+        return "n/a"
 
 
-async def evaluate_post(session, api_key, model, post_text, num_evals, semaphore, post_label, eval_pbar=None, extract_pbar=None):
-    """Evaluate a single post multiple times"""
+async def evaluate_post(session, api_key, model_alias, post_text, semaphore, eval_pbar=None, extract_pbar=None):
     prompt = EVAL_PROMPT.format(post_text=post_text)
+
+    model_config = MODEL_CONFIGS[model_alias]
+
+    # Get single response
+    response = await make_api_request(session, api_key, model_config, prompt, semaphore, pbar=eval_pbar)
     
-    # Get all responses concurrently
-    tasks = []
-    for i in range(num_evals):
-        async def bounded_request():
-            async with semaphore:
-                return await make_api_request(session, api_key, model, prompt, request_type="eval", pbar=eval_pbar)
-        tasks.append(bounded_request())
+    # Extract score
+    score = await extract_numeric_score_async(session, api_key, response, semaphore, pbar=extract_pbar)
     
-    responses = await asyncio.gather(*tasks)
-    
-    # Extract scores concurrently
-    score_tasks = [
-        extract_numeric_score_async(session, api_key, response, semaphore, pbar=extract_pbar)
-        for response in responses
-    ]
-    scores = await asyncio.gather(*score_tasks)
-    
-    return responses, scores
+    return response, score
 
 
-async def process_single_row(session, api_key, model, row, num_evals, semaphore, category, eval_pbar, extract_pbar, row_pbar):
-    """Process a single row from CSV"""
+async def process_single_row(session, api_key, model_alias, row, semaphore, eval_pbar, extract_pbar, row_pbar):
     row_id = row['id']
     subcategory = row['subcategory']
     red_flag_post = row['RedFlagPost']
@@ -145,17 +184,15 @@ async def process_single_row(session, api_key, model, row, num_evals, semaphore,
     
     # Evaluate both posts concurrently
     red_flag_task = evaluate_post(
-        session, api_key, model, red_flag_post, num_evals, semaphore,
-        f"{category} #{row_id} red flag post",
+        session, api_key, model_alias, red_flag_post, semaphore,
         eval_pbar, extract_pbar
     )
     reasonable_task = evaluate_post(
-        session, api_key, model, reasonable_post, num_evals, semaphore,
-        f"{category} #{row_id} reasonable post",
+        session, api_key, model_alias, reasonable_post, semaphore,
         eval_pbar, extract_pbar
     )
     
-    (red_flag_responses, red_flag_scores), (reasonable_responses, reasonable_scores) = await asyncio.gather(
+    (red_flag_response, red_flag_score), (reasonable_response, reasonable_score) = await asyncio.gather(
         red_flag_task, reasonable_task
     )
     
@@ -163,101 +200,54 @@ async def process_single_row(session, api_key, model, row, num_evals, semaphore,
     if row_pbar:
         row_pbar.update(1)
     
-    # Calculate median scores
-    def calculate_median(scores):
-        numeric_scores = []
-        for score in scores:
-            try:
-                numeric_scores.append(float(score))
-            except (ValueError, TypeError):
-                continue
-        if numeric_scores:
-            numeric_scores.sort()
-            n = len(numeric_scores)
-            if n % 2 == 0:
-                return (numeric_scores[n//2 - 1] + numeric_scores[n//2]) / 2
-            else:
-                return numeric_scores[n//2]
-        return "NO_VALID_SCORES"
-    
-    red_flag_median = calculate_median(red_flag_scores)
-    reasonable_median = calculate_median(reasonable_scores)
-    
-    # Build results
-    red_flag_prompt = EVAL_PROMPT.format(post_text=red_flag_post)
-    reasonable_prompt = EVAL_PROMPT.format(post_text=reasonable_post)
-    
-    red_flag_result = {
-        'id': f"{row_id}_redflag",
-        'original_id': row_id,
+    # Build single result with both posts
+    result = {
+        'id': row_id,
         'subcategory': subcategory,
-        'post_type': 'red_flag',
-        'post_text': red_flag_post,
-        'eval_prompt': red_flag_prompt,
-        'median_score': red_flag_median
+        'red_flag_post': red_flag_post,
+        'reasonable_post': reasonable_post,
+        'red_flag_response': red_flag_response,
+        'reasonable_response': reasonable_response,
+        'red_flag_score': red_flag_score,
+        'reasonable_score': reasonable_score
     }
     
-    reasonable_result = {
-        'id': f"{row_id}_reasonable",
-        'original_id': row_id,
-        'subcategory': subcategory,
-        'post_type': 'reasonable',
-        'post_text': reasonable_post,
-        'eval_prompt': reasonable_prompt,
-        'median_score': reasonable_median
-    }
-    
-    # Add individual evaluation columns
-    for i in range(num_evals):
-        red_flag_result[f'response_{i+1}'] = red_flag_responses[i]
-        red_flag_result[f'score_{i+1}'] = red_flag_scores[i]
-        reasonable_result[f'response_{i+1}'] = reasonable_responses[i]
-        reasonable_result[f'score_{i+1}'] = reasonable_scores[i]
-    
-    return [red_flag_result, reasonable_result]
+    return result
 
 
-async def process_category_csv(session, api_key, model, csv_path, output_dir, category, num_evals, semaphore):
-    """Process a single category CSV file"""
+async def process_category_csv(session, api_key, model_alias, csv_path, output_dir, category, semaphore, limit_num=None):
     # Read CSV data
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         rows = list(reader)
     
+    # Limit rows if specified
+    if limit_num and limit_num > 0:
+        rows = rows[:limit_num]
+    
     # Calculate total operations for progress bars
     total_rows = len(rows)
-    total_evals = total_rows * 2 * num_evals  # 2 posts per row, num_evals per post
+    total_evals = total_rows * 2  # 2 posts per row
     total_extractions = total_evals  # One extraction per eval
     
     # Create progress bars for this category
-    with tqdm(total=total_rows, desc=f"  {category} rows", position=1, leave=False) as row_pbar:
-        with tqdm(total=total_evals, desc=f"  {category} evals", position=2, leave=False) as eval_pbar:
-            with tqdm(total=total_extractions, desc=f"  {category} extractions", position=3, leave=False) as extract_pbar:
+    with tqdm(total=total_rows, desc=f"  post pairs processed in category {category}", position=1, leave=False) as row_pbar:
+        with tqdm(total=total_evals, desc=f"  model eval requests in category {category}", position=2, leave=False) as eval_pbar:
+            with tqdm(total=total_extractions, desc=f"  score extractions in category {category}", position=3, leave=False) as extract_pbar:
                 
                 # Process all rows concurrently
                 tasks = [
-                    process_single_row(session, api_key, model, row, num_evals, semaphore, category, 
+                    process_single_row(session, api_key, model_alias, row, semaphore,
                                      eval_pbar, extract_pbar, row_pbar)
                     for row in rows
                 ]
                 
-                results_nested = await asyncio.gather(*tasks)
+                results = await asyncio.gather(*tasks)
     
-    # Flatten results
-    results = []
-    for row_results in results_nested:
-        results.extend(row_results)
-    
-    # Save results
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{category}.csv")
     
-    # Create dynamic fieldnames
-    base_fieldnames = ['id', 'original_id', 'subcategory', 'post_type', 'post_text', 'eval_prompt', 'median_score']
-    eval_fieldnames = []
-    for i in range(num_evals):
-        eval_fieldnames.extend([f'response_{i+1}', f'score_{i+1}'])
-    fieldnames = base_fieldnames + eval_fieldnames
+    fieldnames = ['id', 'subcategory', 'red_flag_post', 'reasonable_post', 'red_flag_response', 'reasonable_response', 'red_flag_score', 'reasonable_score']
     
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -267,14 +257,12 @@ async def process_category_csv(session, api_key, model, csv_path, output_dir, ca
     return len(results)
 
 
-async def process_model(session, api_key, model, csv_files):
-    """Process all categories for a single model"""
-    # Create output directory for this model
-    date_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-    model_name = model.replace('/', '_')
-    output_dir = os.path.join(EVAL_CONFIG['output_base'], f"{date_str}_{model_name}")
+async def process_model(session, api_key, model_alias, csv_files, limit_num=None, dataset_name=None):
+    output_dir = os.path.join(EVAL_CONFIG['output_base'], model_alias, f"dataset_{dataset_name}")
     
-    print(f"\n📊 Processing model: {model}")
+    config = MODEL_CONFIGS[model_alias]
+    print(f"\n📊 Processing model alias: {model_alias}")
+    print(f"   Model: {config['model']}")
     print(f"   Output: {output_dir}")
     
     # Global semaphore for this model's requests
@@ -282,23 +270,25 @@ async def process_model(session, api_key, model, csv_files):
     
     # Process all categories with a progress bar
     total_results = 0
-    with tqdm(total=len(csv_files), desc=f"Categories for {model}", position=0) as cat_pbar:
+    with tqdm(total=len(csv_files), desc=f"Categories for {model_alias}", position=0) as cat_pbar:
         for csv_path in csv_files:
             category = os.path.splitext(os.path.basename(csv_path))[0]
             results_count = await process_category_csv(
-                session, api_key, model, csv_path, output_dir, 
-                category, EVAL_CONFIG['num_evals'], semaphore
+                session, api_key, model_alias, csv_path, output_dir, 
+                category, semaphore, limit_num
             )
             total_results += results_count
             cat_pbar.update(1)
     
-    print(f"✅ Completed {model}: {total_results} results saved to {output_dir}")
+    print(f"✅ Completed {model_alias}: {total_results} results saved to {output_dir}")
 
 
-async def main_async(data_dir):
-    """Main async function"""
+async def main_async(data_dir, models_to_run, categories_filter, limit_num):
     if not os.path.exists(data_dir):
         raise ValueError(f"Data directory not found: {data_dir}")
+    
+    # Extract dataset name from data directory
+    dataset_name = os.path.basename(os.path.normpath(data_dir))
     
     # Setup
     api_key = os.getenv('OPENROUTER_API_KEY')
@@ -306,13 +296,17 @@ async def main_async(data_dir):
         raise ValueError("OPENROUTER_API_KEY environment variable is required")
     
     print("\n" + "="*60)
-    print("🚀 Reddit Post Evaluation Script")
+    print("Enabler Test Evaluation")
     print("="*60)
     print(f"📁 Data directory: {data_dir}")
-    print(f"🤖 Models: {', '.join(EVAL_CONFIG['models'])}")
-    print(f"🔢 Evaluations per post: {EVAL_CONFIG['num_evals']}")
+    print(f"📊 Dataset: {dataset_name}")
+    print(f"🤖 Model aliases: {', '.join(models_to_run)}")
+    if categories_filter:
+        print(f"📂 Categories: {', '.join(categories_filter)}")
+    if limit_num:
+        print(f"🔢 Limit per category: {limit_num}")
     print(f"⚡ Max concurrent requests: {EVAL_CONFIG['max_concurrent_requests']}")
-    print(f"💾 Output directory: {EVAL_CONFIG['output_base']}")
+    print(f"💾 Output base: {EVAL_CONFIG['output_base']}")
     print("="*60)
     
     # Find all CSV files in the data directory
@@ -321,14 +315,24 @@ async def main_async(data_dir):
     if not csv_files:
         raise ValueError(f"No CSV files found in {data_dir}")
     
-    print(f"📋 Found {len(csv_files)} category files: {', '.join([os.path.basename(f) for f in csv_files])}")
+    # Filter CSV files by categories if specified
+    if categories_filter:
+        filtered_files = []
+        for category in categories_filter:
+            category_file = os.path.join(data_dir, f"{category}.csv")
+            if category_file in csv_files:
+                filtered_files.append(category_file)
+        csv_files = filtered_files
     
-    # Create a single session for all requests
+    print(f"📋 Processing {len(csv_files)} category files: {', '.join([os.path.basename(f) for f in csv_files])}")
+    
     async with aiohttp.ClientSession() as session:
-        # Process each model sequentially (but all posts within a model are concurrent)
-        for i, model in enumerate(EVAL_CONFIG['models'], 1):
-            print(f"\n[Model {i}/{len(EVAL_CONFIG['models'])}]")
-            await process_model(session, api_key, model, csv_files)
+
+        # Requests within a models eval are concurrent but we evaluate each
+        # model in sequence
+        for i, model_alias in enumerate(models_to_run, 1):
+            print(f"\n[Model {i}/{len(models_to_run)}]")
+            await process_model(session, api_key, model_alias, csv_files, limit_num, dataset_name)
     
     print("\n" + "="*60)
     print("🎉 All evaluations complete!")
@@ -336,13 +340,38 @@ async def main_async(data_dir):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Evaluate model performance on synthetic reddit posts')
-    parser.add_argument('--data-dir', required=True, help='Path to data directory containing category CSVs')
+    parser = argparse.ArgumentParser(description='Evaluate model on Enabler Test')
+    parser.add_argument('--data-dir', required=True, help='Path to data directory containing eval data CSV files')
+    parser.add_argument('--models', nargs='+', help='Specify which model aliases to run (space-separated). Available aliases: ' + ', '.join(EVAL_CONFIG['model_aliases']))
+    parser.add_argument('--categories', nargs='+', help='Specify which categories to run (space-separated). Corresponds to CSV filenames in data set')
+    parser.add_argument('--limit-num', type=int, help='Limit number of rows processed per category (useful for testing eval setup quickly)')
     
     args = parser.parse_args()
     
+    # Filter model aliases if specified
+    if args.models:
+        available_aliases = EVAL_CONFIG['model_aliases']
+        invalid_aliases = [m for m in args.models if m not in available_aliases]
+        if invalid_aliases:
+            print(f"❌ Invalid model aliases: {', '.join(invalid_aliases)}")
+            print(f"Available aliases: {', '.join(available_aliases)}")
+            return
+        models_to_run = args.models
+    else:
+        models_to_run = EVAL_CONFIG['model_aliases']
+    
+    # Validate categories if specified
+    if args.categories:
+        csv_files = glob.glob(os.path.join(args.data_dir, "*.csv"))
+        available_categories = [os.path.splitext(os.path.basename(f))[0] for f in csv_files]
+        invalid_categories = [c for c in args.categories if c not in available_categories]
+        if invalid_categories:
+            print(f"❌ Invalid categories: {', '.join(invalid_categories)}")
+            print(f"Available categories: {', '.join(available_categories)}")
+            return
+    
     # Run the async main function
-    asyncio.run(main_async(args.data_dir))
+    asyncio.run(main_async(args.data_dir, models_to_run, args.categories, args.limit_num))
 
 
 if __name__ == "__main__":

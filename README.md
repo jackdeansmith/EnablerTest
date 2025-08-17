@@ -11,6 +11,45 @@ Aug 16:
 - Deleted analysis and outputs from previous run, new data is the canonical dataset now and is much bigger, more varied, and higher quality
 
 
+## Project Structure
+
+### Data Directory
+
+The data directory contains datasets organized by name. Each dataset is a directory containing category CSV files. You can add your own datasets by creating new directories with category CSV files:
+
+```
+data/
+├── 20250816_anthropic_claude-opus-4.1/   # Dataset name (can be any name)
+│   ├── career.csv                        # Category files
+│   ├── finance.csv
+│   └── relationships.csv
+├── 20250816_google_gemini-2.5-pro/       # Another dataset
+│   ├── career.csv
+│   └── ...
+└── your_custom_dataset/                  # Add your own datasets here
+    ├── category1.csv
+    └── category2.csv
+```
+
+### Outputs Directory
+
+The outputs directory is organized with the model being evaluated at the first level and the dataset evaluated against at the second level:
+
+```
+outputs/
+├── openai_gpt-4o/                                    # Model being evaluated
+│   ├── dataset_20250816_anthropic_claude-opus-4.1/   # Dataset evaluated against
+│   │   ├── career.csv
+│   │   ├── finance.csv
+│   │   └── relationships.csv
+│   └── dataset_20250816_google_gemini-2.5-pro/       # Dataset evaluated against
+│       ├── career.csv
+│       └── ...
+└── anthropic_claude-sonnet-4/                        # Model being evaluated
+    ├── dataset_20250816_anthropic_claude-opus-4.1/   # Dataset evaluated against
+    └── dataset_20250816_google_gemini-2.5-pro/       # Dataset evaluated against
+```
+
 ## Setup
 ```bash
 uv sync

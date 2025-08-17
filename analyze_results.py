@@ -13,28 +13,62 @@ import seaborn as sns
 from pathlib import Path
 
 
-def load_evaluation_data(outputs_dir):
-    """Load all evaluation data from outputs directory"""
+def load_evaluation_data(outputs_dir, dataset_name):
+    """Load all evaluation data from outputs directory for a specific dataset"""
     all_data = []
     model_dirs = [d for d in os.listdir(outputs_dir) if os.path.isdir(os.path.join(outputs_dir, d))]
     
     for model_dir in model_dirs:
-        # Extract model name from directory (remove timestamp prefix)
-        model_name = "_".join(model_dir.split("_")[2:])  # Skip date_time prefix
-        model_path = os.path.join(outputs_dir, model_dir)
+        model_name = model_dir  # Use directory name as model name
+        dataset_path = os.path.join(outputs_dir, model_dir, f"dataset_{dataset_name}")
         
-        # Find all CSV files for this model
-        csv_files = glob.glob(os.path.join(model_path, "*.csv"))
+        # Skip if this model doesn't have data for this dataset
+        if not os.path.exists(dataset_path):
+            continue
+            
+        # Find all CSV files for this model/dataset combination
+        csv_files = glob.glob(os.path.join(dataset_path, "*.csv"))
         
         for csv_file in csv_files:
             category = os.path.splitext(os.path.basename(csv_file))[0]
             
-            # Read CSV and add metadata
+            # Read CSV and reshape to long format for analysis
             df = pd.read_csv(csv_file)
-            df['model'] = model_name
-            df['category'] = category
             
-            all_data.append(df)
+            # Create separate rows for red flag and reasonable posts
+            red_flag_rows = []
+            reasonable_rows = []
+            
+            for _, row in df.iterrows():
+                # Red flag post row
+                red_flag_rows.append({
+                    'id': f"{row['id']}_redflag",
+                    'original_id': row['id'],
+                    'subcategory': row['subcategory'],
+                    'post_type': 'red_flag',
+                    'post_text': row['red_flag_post'],
+                    'response': row['red_flag_response'],
+                    'score': row['red_flag_score'],
+                    'model': model_name,
+                    'category': category
+                })
+                
+                # Reasonable post row
+                reasonable_rows.append({
+                    'id': f"{row['id']}_reasonable",
+                    'original_id': row['id'],
+                    'subcategory': row['subcategory'],
+                    'post_type': 'reasonable',
+                    'post_text': row['reasonable_post'],
+                    'response': row['reasonable_response'],
+                    'score': row['reasonable_score'],
+                    'model': model_name,
+                    'category': category
+                })
+            
+            # Combine and add to all_data
+            category_df = pd.DataFrame(red_flag_rows + reasonable_rows)
+            all_data.append(category_df)
     
     if not all_data:
         raise ValueError(f"No evaluation data found in {outputs_dir}")
@@ -54,11 +88,11 @@ def create_box_plots(data, output_dir, category=None):
         title_suffix = " - All Categories"
         filename_suffix = "_all"
     
-    # Convert median_score to numeric, handling errors
-    plot_data['median_score_numeric'] = pd.to_numeric(plot_data['median_score'], errors='coerce')
+    # Convert score to numeric, handling errors
+    plot_data['score_numeric'] = pd.to_numeric(plot_data['score'], errors='coerce')
     
-    # Remove rows where median_score couldn't be converted
-    plot_data = plot_data.dropna(subset=['median_score_numeric'])
+    # Remove rows where score couldn't be converted
+    plot_data = plot_data.dropna(subset=['score_numeric'])
     
     if plot_data.empty:
         print(f"No valid numeric scores found for {category if category else 'all categories'}")
@@ -76,8 +110,8 @@ def create_box_plots(data, output_dir, category=None):
         model_data = plot_data[plot_data['model'] == model]
         
         # Create box plot for this model
-        red_flag_scores = model_data[model_data['post_type'] == 'red_flag']['median_score_numeric']
-        reasonable_scores = model_data[model_data['post_type'] == 'reasonable']['median_score_numeric']
+        red_flag_scores = model_data[model_data['post_type'] == 'red_flag']['score_numeric']
+        reasonable_scores = model_data[model_data['post_type'] == 'reasonable']['score_numeric']
         
         box_data = [red_flag_scores, reasonable_scores]
         box_labels = ['Red Flag Posts', 'Reasonable Posts']
@@ -135,12 +169,12 @@ def create_box_plots(data, output_dir, category=None):
 
 def generate_summary_stats(data, output_dir):
     """Generate summary statistics"""
-    # Convert median_score to numeric
-    data['median_score_numeric'] = pd.to_numeric(data['median_score'], errors='coerce')
-    clean_data = data.dropna(subset=['median_score_numeric'])
+    # Convert score to numeric
+    data['score_numeric'] = pd.to_numeric(data['score'], errors='coerce')
+    clean_data = data.dropna(subset=['score_numeric'])
     
     # Calculate summary statistics
-    summary = clean_data.groupby(['model', 'category', 'post_type'])['median_score_numeric'].agg([
+    summary = clean_data.groupby(['model', 'category', 'post_type'])['score_numeric'].agg([
         'count', 'mean', 'std', 'median', 'min', 'max'
     ]).round(2)
     
@@ -154,7 +188,7 @@ def generate_summary_stats(data, output_dir):
     pivot = clean_data.pivot_table(
         index=['model', 'category'], 
         columns='post_type', 
-        values='median_score_numeric',
+        values='score_numeric',
         aggfunc=['mean', 'count']
     ).round(2)
     
@@ -166,6 +200,7 @@ def generate_summary_stats(data, output_dir):
 def main():
     parser = argparse.ArgumentParser(description='Analyze evaluation results and generate plots')
     parser.add_argument('--outputs-dir', required=True, help='Path to outputs directory containing model results')
+    parser.add_argument('--dataset-name', required=True, help='Name of the dataset to analyze (e.g., "20250816_anthropic_claude-opus-4.1")')
     parser.add_argument('--analysis-output', default='analysis', help='Directory to save analysis results (default: analysis)')
     
     args = parser.parse_args()
@@ -174,7 +209,8 @@ def main():
         raise ValueError(f"Outputs directory not found: {args.outputs_dir}")
     
     print(f"Loading evaluation data from: {args.outputs_dir}")
-    data = load_evaluation_data(args.outputs_dir)
+    print(f"Dataset: {args.dataset_name}")
+    data = load_evaluation_data(args.outputs_dir, args.dataset_name)
     
     print(f"Loaded {len(data)} evaluation records")
     print(f"Models: {sorted(data['model'].unique())}")
