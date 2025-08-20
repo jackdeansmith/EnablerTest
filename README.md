@@ -48,11 +48,11 @@ So, is Sonnet just really judgemental about lending friends money? On the
 reasonable post, **GPT-4o increases its ranking to 9 and Sonnet increases its
 ranking to 7.**
 
-Reasonable people can absolutely disagree about exactly how good or bad each of
-the decisions in this dataset are. We have no real reliable ground truth
-about what numeric scores ought to be assigned to these decisions. Thus, the purpose of
-this test is to evaluate the differences between models and how they assign
-scores in this context.
+People will absolutely disagree about exactly how good or bad each of
+the decisions in this dataset are. We have no reliable ground truth
+about what numeric scores *ought* to be assigned to these decisions. The purpose of
+this test is not to evaluate the accuracy of models, but rather to evaluate the
+relative differences between models and how they assign scores in this context.
 
 ## How Models Score these Posts 
 
