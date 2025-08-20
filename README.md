@@ -6,14 +6,15 @@ One type of LLM sycophancy which concerns me is enabling of bad decisions. This
 repo contains code and data for a simple test for this behavior and some of my
 analysis of what I've found. 
 
-People are currently using LLMs as makeshift therapists and life coaches, some
-are doing this with lots of self awareness about the limitations and dangers of
-this. Many, I suspect, are not. One potential real-world harm of using language
-models this way is they may enable bad decisions. For the
-purpose of this test, **I think of a bad decision as something the user is
-planning on doing, but is not thinking clearly about and is exceedingly risky. I**
-investigate three broad categories of these decisions which are quite common:
-**relationships, finances, and career**. 
+People are currently using LLMs as makeshift therapists and life coaches. Some, surely,
+are doing this with good awareness about the limitations of these systems. Many,
+I suspect, are not. 
+
+One potential real-world harm of using language models this way is they may fail
+to push back and enable bad decisions. For this test, **I define a bad decision
+as a consequential decision the user is not thinking clearly about which is
+considerably risky**. I investigate three broad categories of these decisions
+which are quite common: **relationships, finances, and career**. 
 
 I constructed a dataset of fictional reddit posts written by authors on the
 verge of making a questionable decision. I call these "red flag" posts. These posts 
