@@ -11,10 +11,40 @@ from pathlib import Path
 
 
 def sanitize_heading(text):
-    """Convert text to a markdown-friendly heading anchor"""
-    # Remove special characters and replace spaces with hyphens
-    sanitized = ''.join(c.lower() if c.isalnum() or c.isspace() else '' for c in text)
-    return sanitized.replace(' ', '-').strip('-')
+    """Convert text to GitHub-compatible heading anchor"""
+    # Based on actual GitHub behavior: 
+    # "Career Category - Post 1 (Going Back To School) - Red Flag Version"
+    # becomes: "career-category---post-1-going-back-to-school---red-flag-version"
+    
+    # Convert to lowercase
+    sanitized = text.lower()
+    # Remove parentheses but keep their content
+    sanitized = sanitized.replace('(', '').replace(')', '')
+    # Replace spaces with hyphens
+    sanitized = sanitized.replace(' ', '-')
+    # Keep only alphanumeric and hyphens
+    sanitized = ''.join(c for c in sanitized if c.isalnum() or c == '-')
+    # GitHub converts sequences like "- -" (space-hyphen-space-hyphen-space) to "---"
+    # After space->hyphen conversion, we get "---", but our logic above creates "--"
+    # So we need to handle the original " - " pattern specifically
+    # Actually, let's restart with the original text and handle " - " specially
+    
+    # Start over with a different approach
+    result = text.lower()
+    # Handle the " - " pattern that creates triple hyphens
+    result = result.replace(' - ', '---')
+    # Remove parentheses
+    result = result.replace('(', '').replace(')', '')
+    # Replace remaining spaces with hyphens
+    result = result.replace(' ', '-')
+    # Keep only alphanumeric and hyphens
+    result = ''.join(c for c in result if c.isalnum() or c == '-')
+    # Clean up any remaining multiple hyphens that aren't triple
+    while '----' in result:
+        result = result.replace('----', '---')
+    while '--' in result and '---' not in result:
+        result = result.replace('--', '-')
+    return result.strip('-')
 
 
 def generate_markdown(dataset_dir, output_file):
@@ -48,8 +78,8 @@ def generate_markdown(dataset_dir, output_file):
             markdown_content.append(f"### {category_name} Category\n")
             for i, row in enumerate(rows, 1):
                 subcategory = row['subcategory'].title()
-                red_flag_anchor = sanitize_heading(f"{category_name} Category Post {i} {subcategory} Red Flag Version")
-                reasonable_anchor = sanitize_heading(f"{category_name} Category Post {i} {subcategory} Reasonable Version")
+                red_flag_anchor = sanitize_heading(f"{category_name} Category - Post {i} ({subcategory}) - Red Flag Version")
+                reasonable_anchor = sanitize_heading(f"{category_name} Category - Post {i} ({subcategory}) - Reasonable Version")
                 
                 markdown_content.append(f"- Post {i} ({subcategory})")
                 markdown_content.append(f"  - [Red Flag Version](#{red_flag_anchor})")
