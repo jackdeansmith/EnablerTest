@@ -680,6 +680,83 @@ def create_cross_dataset_bias_chart(outputs_dir):
     print(f"Saved cross-dataset bias chart: {output_path}")
 
 
+def create_selected_models_distribution_histogram(data, output_dir):
+    """Create distribution histogram comparing only Claude 4 Sonnet, GPT-4o, GPT-5-chat, and LLama 4 Maverick"""
+    # Define the specific models to include and their official display names
+    selected_models = ['claude-sonnet-4', 'gpt-4o', 'gpt-5-chat', 'llama-4-maverick']
+    
+    # Map to official model names from eval_model.py MODEL_CONFIGS
+    model_display_names = {
+        'claude-sonnet-4': 'Claude Sonnet 4',
+        'gpt-4o': 'GPT-4o',
+        'gpt-5-chat': 'GPT-5 Chat',
+        'llama-4-maverick': 'Llama 4 Maverick'
+    }
+    
+    # Filter data to only include the selected models
+    filtered_data = data[data['model'].isin(selected_models)]
+    
+    if filtered_data.empty:
+        print("Warning: No data found for the selected models (Claude 4 Sonnet, GPT-4o, GPT-5-chat, LLama 4 Maverick)")
+        return
+    
+    # Convert score to numeric and clean data
+    filtered_data = filtered_data.copy()
+    filtered_data['score_numeric'] = pd.to_numeric(filtered_data['score'], errors='coerce')
+    clean_data = filtered_data.dropna(subset=['score_numeric'])
+    
+    # Get models that actually exist in the data
+    available_models = sorted([model for model in selected_models if model in clean_data['model'].unique()])
+    
+    if not available_models:
+        print("Warning: None of the selected models found in data")
+        return
+    
+    # Create figure with subplots for each model
+    fig, axes = plt.subplots(len(available_models), 1, figsize=(12, 3 * len(available_models)))
+    
+    # If there's only one model, axes won't be an array
+    if len(available_models) == 1:
+        axes = [axes]
+    
+    # Define bins for histograms (1-10 with 0.5 width bins)
+    bins = [i + 0.5 for i in range(11)]  # 0.5, 1.5, 2.5, ..., 10.5
+    
+    for i, model in enumerate(available_models):
+        model_data = clean_data[clean_data['model'] == model]
+        
+        # Get scores for each post type
+        red_flag_scores = model_data[model_data['post_type'] == 'red_flag']['score_numeric']
+        reasonable_scores = model_data[model_data['post_type'] == 'reasonable']['score_numeric']
+        
+        # Create overlapping histograms
+        axes[i].hist(red_flag_scores, bins=bins, alpha=0.7, color='#ff6b6b', 
+                    label='Red Flag', density=False, edgecolor='#cc2d2d', linewidth=0.5)
+        axes[i].hist(reasonable_scores, bins=bins, alpha=0.7, color='#4ecdc4', 
+                    label='Reasonable', density=False, edgecolor='#2a8b8b', linewidth=0.5)
+        
+        # Customize each subplot using official model names
+        axes[i].set_title(model_display_names.get(model, model))
+        axes[i].set_xlabel('Score')
+        axes[i].set_ylabel('Count')
+        axes[i].set_xlim(0.5, 10.5)
+        axes[i].set_ylim(0, 80)
+        axes[i].set_xticks(range(1, 11))
+        axes[i].grid(True, alpha=0.3, axis='y')
+        axes[i].legend(loc='upper right')
+    
+    # Remove the suptitle entirely
+    plt.tight_layout()
+    
+    # Save the chart
+    output_path = os.path.join(output_dir, 'figure_9.png')
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    print(f"Saved selected models distribution histogram: {output_path}")
+    print(f"Models included: {', '.join(available_models)}")
+
+
 # Analysis functions will be added here as requested
 
 
@@ -736,6 +813,10 @@ def main():
     # Create cross-dataset bias chart
     print("\nCreating cross-dataset bias chart...")
     create_cross_dataset_bias_chart(args.outputs_dir)
+    
+    # Create selected models distribution histogram
+    print("\nCreating selected models distribution histogram...")
+    create_selected_models_distribution_histogram(data, args.analysis_output)
     
     print(f"\nAnalysis complete! Results saved to {args.analysis_output}")
 
